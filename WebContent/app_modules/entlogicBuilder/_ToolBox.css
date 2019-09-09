@@ -1,0 +1,44 @@
+body {
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+table {
+	padding: 0px;
+}
+table tr {
+}
+table td {
+}
+
+.treeview {
+	padding: 8px;
+	width: auto;
+	height: auto;
+	z-index: 10;
+}
+
+.tree-node {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: auto;
+	height: 24px;
+	
+	color: #000;
+	background-color: transparent;
+}
+
+.tree-node-selected {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: auto;
+	height: 24px;
+	
+	color: #000;
+	background-color: #E9F6FA;
+}

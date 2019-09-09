@@ -1,0 +1,21 @@
+body {
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+table {
+}
+
+table td {
+	height: 24px;
+	padding: 4px;	
+	text-align: left;
+}
+
+.property-name {
+	text-align: right;
+	width: 56px;
+}
+
+.property-value {
+	text-align: left;
+}

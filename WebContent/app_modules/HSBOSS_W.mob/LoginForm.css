@@ -1,0 +1,16 @@
+.login-type {
+    height: 4rem;
+    font-size: 1.3rem;
+ 	padding: 1rem 0rem;
+    color: #555;
+}
+
+.login-type-selected {
+    height: 4rem;
+	font-size: 1.3rem;
+	padding: 1rem 0rem;
+    color: #2a7cf7;
+    border-width: 0rem 0rem 0.3rem 0rem;
+    border-style: solid;
+    border-color: #2a7cf7;
+}

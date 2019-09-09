@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS/EnterpriseEditForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group-v eui-form' style='width: 100%;height: 100%;'>
+		<div id='tag_4' class='group-h eui-form-content' style='width: 100%;height: 100%;'>
+			<div id='tag_1' class='group-v eui-panel' style='width: 220px;height: 100%;'>
+				<div id='tag_2' class='group-h eui-panel-title-bar'>
+					<span id='lblDocTitle' class='label eui-panel-title'>
+						档案目录
+					</span>
+				</div>
+				<div id='tag_5' class='group-v eui-panel-content' style='height: 100%;flex-grow: 1;'>
+					<div id='tvwCatalog' class='treeview'>
+						#[text]#
+					</div>
+				</div>
+				<div id='tag_9' class='group-v-m eui-panel-title-bar' style='height: auto;padding: 12px;'>
+					<button id='btnAuditSuccess' class='button eui-btn' style='margin: 2px 0rem;width: 100px;'>
+						审核通过
+					</button>
+					<button id='btnAuditFaild' class='button eui-btn' style='margin: 2px 0rem;width: 100px;'>
+						审核不过
+					</button>
+					<button id='btnStopBiz' class='button eui-btn' style='margin: 2px 0rem;width: 100px;'>
+						暂停业务
+					</button>
+					<button id='btnRestoreBiz' class='button eui-btn' style='margin: 2px 0rem;width: 100px;'>
+						恢复业务
+					</button>
+					<button id='btnDeleteAll' class='button eui-btn' style='margin: 2px 0rem;width: 100px;'>
+						注销资料
+					</button>
+				</div>
+			</div>
+			<div id='tag_6' class='group-v' style='width: 12px;height: 100%;'>
+			</div>
+			<div id='tag_7' class='group-v  eui-panel' style='width: 320px;height: 100%;flex-grow: 1;'>
+				<div id='divDocView' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+					<iframe id='iframeDoc' class='iframe' src='../HSBOSS/EnterpriseDoc.html'>
+					</iframe>
+				</div>
+				<div id='divSubData' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+					<div id='tag_11' class='group-h eui-panel-title-bar'>
+						<span id='lblSubDataTitle' class='label eui-panel-title'>
+							家政企业列表
+						</span>
+						<div id='tag_13' class='space'>
+						</div>
+						<input id='tag_14' type='text' class='text' style='height: 24px;'>
+						</input>
+						<button id='btnSearch' class='button eui-link-btn'>
+							 搜索
+						</button>
+						<button id='btnAdd' class='button eui-link-btn'>
+							✚ 添加
+						</button>
+						<button id='btnEdit' class='button eui-link-btn'>
+							✎ 修改
+						</button>
+						<button id='btnDelete' class='button eui-link-btn'>
+							━ 删除
+						</button>
+					</div>
+					<div id='divServiceList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='dgrService' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_22' class='datagrid-head'>
+								<div id='tag_23' class='datagrid-head-content'>
+									<div id='tag_24' class='datagrid-col' style='width: 240px;'>
+										产品名称
+									</div>
+									<div id='tag_27' class='datagrid-col' style='width: 180px;'>
+										平台佣金
+									</div>
+									<div id='tag_28' class='datagrid-col'>
+										企业佣金
+									</div>
+								</div>
+							</div>
+							<div id='tag_29' class='datagrid-body'>
+								<div id='tag_30' class='datagrid-body-content'>
+									<div id='tag_31' class='datagrid-row'>
+										<div id='tag_32' class='datagrid-cell' style='width: 240px;'>
+											#[SERVICE_NAME]#
+										</div>
+										<div id='tag_35' class='datagrid-cell' style='width: 180px;'>
+											#[PLATFORM_COMM]#元
+										</div>
+										<div id='tag_36' class='datagrid-cell'>
+											#[ENTERPRISE_COMM]#元
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='divWorkerList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='dgrWorker' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_72' class='datagrid-head'>
+								<div id='tag_73' class='datagrid-head-content'>
+									<div id='tag_74' class='datagrid-col' style='width: 240px;'>
+										人员姓名
+									</div>
+									<div id='tag_76' class='datagrid-col' style='width: 80px;'>
+										性别
+									</div>
+									<div id='tag_77' class='datagrid-col' style='width: 90px;'>
+										年龄
+									</div>
+									<div id='tag_3' class='datagrid-col' style='width: 400px;'>
+										技能
+									</div>
+								</div>
+							</div>
+							<div id='tag_79' class='datagrid-body'>
+								<div id='tag_80' class='datagrid-body-content'>
+									<div id='tag_81' class='datagrid-row'>
+										<div id='tag_82' class='datagrid-cell' style='width: 240px;'>
+											#[NAME]#
+										</div>
+										<div id='tag_84' class='datagrid-cell' style='width: 80px;'>
+											#[SEX_TEXT]#
+										</div>
+										<div id='tag_85' class='datagrid-cell' style='width: 90px;'>
+											#[AGE]#岁
+										</div>
+										<div id='tag_8' class='datagrid-cell' style='width: 400px;'>
+											#[SKILL_TEXT]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='divIllegalList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='dgrIllegal' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_39' class='datagrid-head'>
+								<div id='tag_40' class='datagrid-head-content'>
+									<div id='tag_41' class='datagrid-col' style='width: 240px;'>
+										企业违规类型
+									</div>
+									<div id='tag_43' class='datagrid-col' style='width: 180px;'>
+										违规日期
+									</div>
+									<div id='tag_45' class='datagrid-col'>
+										状态
+									</div>
+								</div>
+							</div>
+							<div id='tag_46' class='datagrid-body'>
+								<div id='tag_47' class='datagrid-body-content'>
+									<div id='tag_48' class='datagrid-row'>
+										<div id='tag_49' class='datagrid-cell' style='width: 240px;'>
+											#[ILLEGAL_TYPE_TEXT]#
+										</div>
+										<div id='tag_51' class='datagrid-cell' style='width: 180px;'>
+											#[ILLEGAL_DATE]#
+										</div>
+										<div id='tag_53' class='datagrid-cell'>
+											#[STATUS_TEXT]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

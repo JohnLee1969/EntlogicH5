@@ -1,0 +1,20 @@
+/* 设置列表样式 */
+.list-item-normal {
+	border-style: solid;
+	border-color: #FFF;
+	border-width: 0.5rem;
+    border-radius: 1rem;
+	
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.list-item-selected {
+	border-style: solid;
+	border-color: #FFF;
+	border-width: 0.5rem;
+    border-radius: 1rem;
+	
+	background-color: #FFF;
+	overflow: hidden;
+}

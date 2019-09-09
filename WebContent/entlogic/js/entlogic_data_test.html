@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- CSS -->
+	<link href="../common/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/entlogic.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="Main.css" type="text/css">
+	
+	<!-- JS -->
+	<script src="../../common/js/jquery-1.11.1.min.js"></script>
+	<script src="../../common/js/bootstrap.min.js"></script>
+	<script src="../../common/js/jquery.base64.js"></script>
+	
+	<script src="entlogic_data.js"></script>
+</head>
+
+<script type="text/javascript">
+
+	// 测试：entlogic_data_item 
+	var itemXML = "";
+	itemXML += "<item>";
+	itemXML += "<key>k1</key>";
+	itemXML += "<value>v1</value>";
+	itemXML += "</item>";
+	
+	var item = new entlogic_data_item();
+	item.loadXML(itemXML);
+	itemXML = item.toXML();
+	
+	// 测试：entlogic_data_record 
+	var recordXML = "";
+	recordXML += "<record>";
+	
+	recordXML += "<item>";
+	recordXML += "<key>k1</key>";
+	recordXML += "<value>v1</value>";
+	recordXML += "</item>";
+	
+	recordXML += "<item>";
+	recordXML += "<key>k2</key>";
+	recordXML += "<value>v2</value>";
+	recordXML += "</item>";
+	
+	recordXML += "</record>";
+	
+	var record = new entlogic_data_record();
+	record.loadXML(recordXML);
+	recordXML = record.toXML();
+	
+	// 测试：entlogic_data_table 
+	var tableXML = "";
+	tableXML += "<data_table>";
+	
+	tableXML += "<id>table01</id>";	
+	
+	tableXML += "<records>";
+	
+	tableXML += "<record>";
+	tableXML += "<item>";
+	tableXML += "<key>k01</key>";
+	tableXML += "<value>v01</value>";
+	tableXML += "</item>";
+	tableXML += "<item>";
+	tableXML += "<key>k02</key>";
+	tableXML += "<value>v02</value>";
+	tableXML += "</item>";
+	tableXML += "</record>";
+	
+	tableXML += "<record>";
+	tableXML += "<item>";
+	tableXML += "<key>k01</key>";
+	tableXML += "<value>v11</value>";
+	tableXML += "</item>";
+	tableXML += "<item>";
+	tableXML += "<key>k02</key>";
+	tableXML += "<value>v12</value>";
+	tableXML += "</item>";
+	tableXML += "</record>";
+	
+	tableXML += "</records>";
+	tableXML += "</data_table>";
+
+	var table = new entlogic_data_table();
+	table.loadXML(tableXML);
+	tableXML = table.toXML();
+	
+	// 测试entlogic_data_package
+	var packageXML = "";
+	packageXML += "<data_package>";
+	
+	packageXML += "<data_table>";
+	
+	packageXML += "<id>table01</id>";	
+	
+	packageXML += "<records>";
+	
+	packageXML += "<record>";
+	packageXML += "<item>";
+	packageXML += "<key>k01</key>";
+	packageXML += "<value>v01</value>";
+	packageXML += "</item>";
+	packageXML += "<item>";
+	packageXML += "<key>k02</key>";
+	packageXML += "<value>v02</value>";
+	packageXML += "</item>";
+	packageXML += "</record>";
+	
+	packageXML += "<record>";
+	packageXML += "<item>";
+	packageXML += "<key>k01</key>";
+	packageXML += "<value>v11</value>";
+	packageXML += "</item>";
+	packageXML += "<item>";
+	packageXML += "<key>k02</key>";
+	packageXML += "<value>v12</value>";
+	packageXML += "</item>";
+	packageXML += "</record>";
+	
+	packageXML += "</records>";
+	packageXML += "</data_table>";
+		
+	packageXML += "</data_package>";
+	
+	var data_package = new entlogic_data_package();
+	data_package.loadXML(packageXML);
+	packageXML = data_package.toXML();
+
+</script>
+  
+<body>
+    This is my HTML page. <br>
+</body>
+
+</html>

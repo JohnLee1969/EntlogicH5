@@ -1,0 +1,44 @@
+.listWoker-item-normal {
+	border-style: solid;
+	border-color: #FFF;
+	border-width: 0.2rem;
+	
+	overflow: hidden;
+	
+    background-color: #FFF;
+    border-radius: 0.3rem;
+}
+
+.listWoker-item-normal > .button {
+    color: #EEE;
+}
+
+.listWoker-item-selected {
+	border-style: solid;
+	border-color: #2a7cf7;
+	border-width: 0.2rem;
+	
+    background-color: #FFF;
+    border-radius: 0.3rem;
+    
+	overflow: hidden;
+}
+
+.listWoker-item-selected > .button {
+    color: #2a7cf7;
+}
+
+.status
+{
+	border-radius: 1.2rem;
+	color: #2a7cf7;
+	font-size: 0.1rem;
+	text-align: center;
+	border: 0.05rem solid #2a7cf7;
+    padding: 0rem 0.2rem;
+}
+
+.list-item-selected
+{
+    background-color: #FFF;
+}

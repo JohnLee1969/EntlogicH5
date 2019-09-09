@@ -1,0 +1,40 @@
+/* 设置技能、语言列表样式 */
+.lstServiceType-item-normal {
+    color: #999;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 0rem 0.1rem 0rem 0rem;
+	
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.lstServiceType-item-selected {
+    color: #555;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 0.1rem 0rem 0.1rem 0.1rem;
+	
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+/* 设置服务产品列表样式 */
+.lstService-item-normal {
+	border-style: solid;
+	border-color: #FFF;
+	border-width: 0.3rem;
+	
+	background-color: #EEE;
+	overflow: hidden;
+}
+
+.lstService-item-selected {
+	border-style: solid;
+	border-color: #FFF;
+	border-width: 0.3rem;
+	
+	background-color: #E9F6FA;
+	overflow: hidden;
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/entlogicSystem/CodeMngForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group-v eui-form'>
+		<div id='tag_4' class='group-h eui-form-content'>
+			<div id='tag_5' class='group-v eui-panel' style='width: 380px;height: 100%;'>
+				<div id='tag_6' class='group-h eui-panel-title-bar'>
+					<span id='tag_7' class='label eui-panel-title'>
+						编码类型列表
+					</span>
+					<div id='tag_8' class='space'>
+					</div>
+					<button id='btnAddCodeType' class='button eui-link-btn'>
+						✚ 添加
+					</button>
+					<button id='btnEditCodeType' class='button eui-link-btn'>
+						✎ 修改
+					</button>
+					<button id='btnDeleteCodeType' class='button eui-link-btn'>
+						━ 删除
+					</button>
+					<button id='btnMoveUp' class='button eui-link-btn'>
+						▲ 上移
+					</button>
+					<button id='btnMoveDown' class='button eui-link-btn'>
+						▼ 下移
+					</button>
+				</div>
+				<div id='tag_9' class='group-v eui-panel-content' style='flex-grow: 1;'>
+					<div id='lstCodeType' class='list'>
+						<div id='lstCodeType_Row' class='list-row' style='padding: 4px;'>
+							#[SN]#. #[TYPE_NAME]#（#[TYPE_CODE]#）
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_10' class='group-v' style='width: 12px;height: 100%;'>
+			</div>
+			<div id='tag_11' class='group-v eui-panel' style='width: 100px;height: 100%;flex-grow: 1;'>
+				<div id='tag_12' class='group-h eui-panel-title-bar'>
+					<span id='tag_13' class='label eui-panel-title'>
+						编码数据列表
+					</span>
+					<div id='tag_14' class='space'>
+					</div>
+					<button id='btnAddCode' class='button eui-link-btn'>
+						✚ 添加
+					</button>
+					<button id='btnEditCode' class='button eui-link-btn'>
+						✎ 修改
+					</button>
+					<button id='btnDeleteCode' class='button eui-link-btn'>
+						━ 删除
+					</button>
+				</div>
+				<div id='tag_15' class='group-v eui-panel-content'>
+					<div id='dgrCode' class='datagrid ' style='width: 100%;flex-grow: 1;'>
+						<div id='tag_16' class='datagrid-head'>
+							<div id='tag_17' class='datagrid-head-content'>
+								<div id='tag_18' class='datagrid-col'>
+									编码
+								</div>
+								<div id='tag_19' class='datagrid-col' style='width: 200px;'>
+									编码名称
+								</div>
+								<div id='tag_20' class='datagrid-col' style='width: 200px;'>
+									层级码
+								</div>
+								<div id='tag_21' class='datagrid-col' style='width: 200px;'>
+									备注
+								</div>
+							</div>
+						</div>
+						<div id='tag_22' class='datagrid-body'>
+							<div id='tag_23' class='datagrid-body-content'>
+								<div id='tag_24' class='datagrid-row'>
+									<div id='tag_25' class='datagrid-cell'>
+										#[CODE]#
+									</div>
+									<div id='tag_26' class='datagrid-cell' style='width: 200px;'>
+										#[CODE_NAME]#
+									</div>
+									<div id='tag_27' class='datagrid-cell' style='width: 200px;'>
+										#[ORDER_CODE]#
+									</div>
+									<div id='tag_28' class='datagrid-cell' style='width: 200px;'>
+										#[DESCRIPTION]#
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>EntlogicH5</display-name>
+	
+	<!-- 配置会话超时 -->
+	<session-config>  
+	    <session-timeout>-1</session-timeout>  
+	</session-config>  
+	
+	<!-- 配置欢迎页面 -->
+    <welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+		 
+	<!-- 配置业务处理服务 -->
+	<servlet>
+		<servlet-name>BpMaster</servlet-name>
+		<servlet-class>com.entlogic.h5.servlets.BpMaster</servlet-class>
+		
+		<!-- 应用根路径：ApplicationRoot -->
+		<init-param>
+			<param-name>ApplicationRoot</param-name>
+			<param-value>/EntlogicH5</param-value>
+		</init-param>
+		
+		<!-- 数据库类别：SQLSERVER、ORACLE -->
+		<init-param>
+			<param-name>jdbc/entlogic</param-name>
+			<param-value>MSSQL</param-value>
+		</init-param>
+		
+		<!-- 数据库事务超时 -->
+		<init-param>
+			<param-name>TransactionTimeOut</param-name>
+			<param-value>10000</param-value>
+		</init-param>
+		
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BpMaster</servlet-name>
+		<url-pattern>/BpMaster</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 配置JSON服务管理器 -->
+	<servlet>
+		<servlet-name>ServiceMaster</servlet-name>
+		<servlet-class>com.entlogic.h5.servlets.ServiceMaster</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServiceMaster</servlet-name>
+		<url-pattern>/ServiceMaster</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 配置Req服务 -->
+	<servlet>
+		<servlet-name>ReqMaster</servlet-name>
+		<servlet-class>com.entlogic.h5.servlets.ReqMaster</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReqMaster</servlet-name>
+		<url-pattern>/ReqMaster</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 配置文件上传服务 -->
+	<servlet>
+		<servlet-name>UploadBigFile</servlet-name>
+		<servlet-class>com.entlogic.h5.servlets.UploadBigFile</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadBigFile</servlet-name>
+		<url-pattern>/UploadBigFile</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

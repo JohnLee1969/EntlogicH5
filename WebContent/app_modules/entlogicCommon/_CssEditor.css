@@ -1,0 +1,13 @@
+body {
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+table {
+	padding: 3px;
+}
+
+table td {
+	padding: 3px;
+	
+	text-align: right;
+}

@@ -1,0 +1,125 @@
+.hsboss-background-color-blue {
+	background-color: #0074FF;
+}
+
+.hsboss-background-color-orange {
+	background-color: #FF9800;
+}
+
+.hsboss-background-color-green {
+	background-color: #3FB274;
+}
+
+.hsboss-background-color-white {
+	background-color: #FFF;
+}
+
+.hsboss-background-color-gray {
+	background-color: #AAA;
+}
+
+.hsboss-background-color-red {
+	background-color: red;
+}
+
+
+.hsboss-color-red {
+	color: red;
+}
+
+.hsboss-color-blue {
+	color: #0074FF;
+}
+
+.hsboss-color-orange {
+	color: #FF9800;
+}
+
+.hsboss-color-green {
+	color: #3FB274;
+}
+
+.hsboss-color-white {
+	color: #FFF;
+}
+
+.hsboss-color-gray {
+	color: #AAA;
+}
+
+.hsboss-border-blue {
+    border-style: solid;
+    border-width: 0.1rem;
+	border-color: #2a7cf7;
+}
+
+.hsboss-border-green {
+    border-style: solid;
+    border-width: 0.1rem;
+	border-color: #3FB274;
+}
+
+.hsboss-border-white {
+    border-style: solid;
+    border-width: 0.1rem;
+	border-color: #FFF;
+}
+
+.hsboss-border-gray {
+    border-style: solid;
+    border-width: 0.1rem;
+	border-color: #AAA;
+}
+
+.hsboss-input-box{
+	width: 17rem;
+	height: 2.4rem;
+	border-style: solid;
+	border-width: 0rem 0rem 0.1rem 0rem;
+	border-color: #CCC;	
+}
+
+.hsboss-border-bottom-gray {
+    border-bottom-style: solid;
+    border-bottom-width: 0.1rem;
+	border-bottom-color: #EAEAEA;
+}
+
+.hsboss-title-bar {
+    background-color: #0074FF;
+    height: 4rem;
+    padding: 0rem 1rem;
+}
+
+.hsboss-title-bar-left-btn {
+    position: absolute;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: #FFF;
+}
+
+.hsboss-title-bar-right-btn {
+    position: absolute;
+    right: 1rem;
+    font-size: 2.5rem;
+    color: #FFF;
+}
+
+.hsboss-main-container {
+    position: absolute;
+    top: 4rem;
+    bottom: 6rem;
+    left: 0rem;
+    right: 0rem;
+    padding:1rem;
+    overflow-y: auto;
+}
+
+.hsboss-bottom-bar {
+    height: 6rem;
+    padding: 0rem 1rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+}

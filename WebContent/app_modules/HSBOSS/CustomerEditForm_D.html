@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS/CustomerEditForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group-v eui-form'>
+		<div id='tag_1' class='group-h eui-form-content' style='height: 100%;'>
+			<div id='tag_2' class='group-v eui-panel' style='width: 220px;height: 100%;'>
+				<div id='tag_3' class='group-h eui-panel-title-bar'>
+					<span id='lblDocTitle' class='label eui-panel-title'>
+						档案目录
+					</span>
+				</div>
+				<div id='tag_5' class='group-v eui-panel-content' style='height: 100%;flex-grow: 1;'>
+					<div id='tvwCatalog' class='treeview'>
+						#[text]#
+					</div>
+				</div>
+			</div>
+			<div id='tag_7' class='group-v' style='width: 12px;height: 100%;'>
+			</div>
+			<div id='tag_8' class='group-v  eui-panel' style='width: 100px;height: 100%;flex-grow: 1;'>
+				<div id='divDocView' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+					<iframe id='iframeDoc' class='iframe' src='../HSBOSS/CustomerDoc.html'>
+					</iframe>
+				</div>
+				<div id='divSubData' class='group-v' style='width: 100%;height: 200px;flex-grow: 1;'>
+					<div id='tag_4' class='group-h eui-panel-title-bar'>
+						<span id='lblSubDataTitle' class='label eui-panel-title'>
+							家政企业列表
+						</span>
+						<div id='tag_14' class='space'>
+						</div>
+						<button id='tag_15' class='button eui-link-btn'>
+							 搜索
+						</button>
+						<button id='tag_16' class='button eui-link-btn'>
+							✚ 添加
+						</button>
+						<button id='tag_17' class='button eui-link-btn'>
+							✎ 修改
+						</button>
+						<button id='tag_18' class='button eui-link-btn'>
+							━ 删除
+						</button>
+					</div>
+					<div id='divLocationList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='tag_20' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_21' class='datagrid-head'>
+								<div id='tag_22' class='datagrid-head-content'>
+									<div id='tag_23' class='datagrid-col'>
+										关系
+									</div>
+									<div id='tag_24' class='datagrid-col'>
+										亲友姓名
+									</div>
+									<div id='tag_25' class='datagrid-col'>
+										性别
+									</div>
+									<div id='tag_26' class='datagrid-col'>
+										联系电话
+									</div>
+								</div>
+							</div>
+							<div id='tag_27' class='datagrid-body'>
+								<div id='tag_28' class='datagrid-body-content'>
+									<div id='tag_29' class='datagrid-row'>
+										<div id='tag_30' class='datagrid-cell'>
+											#[RELATIONSHIP_TEXT]#
+										</div>
+										<div id='tag_31' class='datagrid-cell'>
+											#[NAME]#
+										</div>
+										<div id='tag_32' class='datagrid-cell'>
+											#[SEX_TEXT]#
+										</div>
+										<div id='tag_33' class='datagrid-cell'>
+											#[PHONE]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='divCardList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='tag_35' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_36' class='datagrid-head'>
+								<div id='tag_37' class='datagrid-head-content'>
+									<div id='tag_38' class='datagrid-col'>
+										证照类型
+									</div>
+									<div id='tag_39' class='datagrid-col' style='width: 180px;'>
+										证照号码
+									</div>
+									<div id='tag_40' class='datagrid-col'>
+										生效日期
+									</div>
+									<div id='tag_41' class='datagrid-col'>
+										失效日期
+									</div>
+								</div>
+							</div>
+							<div id='tag_42' class='datagrid-body'>
+								<div id='tag_43' class='datagrid-body-content'>
+									<div id='tag_44' class='datagrid-row'>
+										<div id='tag_45' class='datagrid-cell'>
+											#[CERT_TYPE_TEXT]#
+										</div>
+										<div id='tag_46' class='datagrid-cell' style='width: 180px;'>
+											#[CERT_CODE]#
+										</div>
+										<div id='tag_47' class='datagrid-cell'>
+											#[EFFECTIVE_DATE]#
+										</div>
+										<div id='tag_48' class='datagrid-cell'>
+											#[EXPIRY_DATE]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='divOrderList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='tag_50' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_51' class='datagrid-head'>
+								<div id='tag_52' class='datagrid-head-content'>
+									<div id='tag_53' class='datagrid-col' style='width: 240px;'>
+										签约企业
+									</div>
+									<div id='tag_54' class='datagrid-col' style='width: 240px;'>
+										签约人员
+									</div>
+									<div id='tag_55' class='datagrid-col'>
+										生效日期
+									</div>
+									<div id='tag_56' class='datagrid-col'>
+										失效日期
+									</div>
+								</div>
+							</div>
+							<div id='tag_57' class='datagrid-body'>
+								<div id='tag_58' class='datagrid-body-content'>
+									<div id='tag_59' class='datagrid-row'>
+										<div id='tag_60' class='datagrid-cell' style='width: 240px;'>
+											#[HS_ENTERPRISE_TEXT]#
+										</div>
+										<div id='tag_61' class='datagrid-cell' style='width: 240px;'>
+											#[HS_WORKER_TEXT]#
+										</div>
+										<div id='tag_62' class='datagrid-cell'>
+											#[START_DATE]#
+										</div>
+										<div id='tag_63' class='datagrid-cell'>
+											#[END_DATE]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='divComplainlList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='tag_65' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_66' class='datagrid-head'>
+								<div id='tag_67' class='datagrid-head-content'>
+									<div id='tag_68' class='datagrid-col' style='width: 180px;'>
+										体检日期
+									</div>
+									<div id='tag_69' class='datagrid-col'>
+										体检结果
+									</div>
+									<div id='tag_70' class='datagrid-col' style='width: 240px;'>
+										体检中心名称
+									</div>
+								</div>
+							</div>
+							<div id='tag_71' class='datagrid-body'>
+								<div id='tag_72' class='datagrid-body-content'>
+									<div id='tag_73' class='datagrid-row'>
+										<div id='tag_74' class='datagrid-cell' style='width: 180px;'>
+											#[ME_DATE]#
+										</div>
+										<div id='tag_75' class='datagrid-cell'>
+											#[RESULT_TEXT]#
+										</div>
+										<div id='tag_76' class='datagrid-cell' style='width: 240px;'>
+											#[MEC]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='divIllegalList' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;'>
+						<div id='tag_78' class='datagrid' style='width: 100%;flex-grow: 1;'>
+							<div id='tag_79' class='datagrid-head'>
+								<div id='tag_80' class='datagrid-head-content'>
+									<div id='tag_81' class='datagrid-col' style='width: 180px;'>
+										违规日期
+									</div>
+									<div id='tag_82' class='datagrid-col'>
+										违规类型
+									</div>
+									<div id='tag_83' class='datagrid-col'>
+										处理状态
+									</div>
+								</div>
+							</div>
+							<div id='tag_84' class='datagrid-body'>
+								<div id='tag_85' class='datagrid-body-content'>
+									<div id='tag_86' class='datagrid-row'>
+										<div id='tag_87' class='datagrid-cell' style='width: 180px;'>
+											#[ILLEGAL_DATE]#
+										</div>
+										<div id='tag_88' class='datagrid-cell'>
+											#[ILLEGAL_TYPE_TEXT]#
+										</div>
+										<div id='tag_89' class='datagrid-cell'>
+											#[STATUS_TEXT]#
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

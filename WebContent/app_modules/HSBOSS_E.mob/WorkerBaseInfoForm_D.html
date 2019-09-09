@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS_E.mob/WorkerBaseInfoForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_7' class='group-h-m hsboss-title-bar' style='height: 4rem;'>
+			<span id='btnBack' class='button hsboss-title-bar-left-btn'>
+				
+			</span>
+			<span id='tag_12' class='title-1 hsboss-color-white'>
+				建档立卡
+			</span>
+			<span id='btnSave' class='button hsboss-title-bar-right-btn' style='height: auto;font-size: 2.5rem;'>
+				
+			</span>
+		</div>
+		<div id='tag_8' class=' group-h-m emui-tab-head-h' style='height: 4rem;'>
+			<span id='tag_22' class='emui-tab-selected-h'>
+				基本信息
+			</span>
+			<span id='tabSkillInfo' class='emui-tab-h'>
+				工作技能
+			</span>
+			<span id='tabServiceInfo' class='emui-tab-h'>
+				签约服务
+			</span>
+			<span id='tabMediaInfo' class='emui-tab-h'>
+				照片视频
+			</span>
+		</div>
+		<div id='tag_19' class='group hsboss-main-container' style='top: 8.5rem;'>
+			<div id='tag_27' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_17' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_114' class='title-2'>
+						基本信息
+					</span>
+				</div>
+				<div id='tag_5' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_6' class='lable'>
+						姓名
+					</span>
+					<div id='tag_9' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtName' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_1' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_2' class='lable'>
+						性别
+					</span>
+					<div id='lkpSex' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_10' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 0rem 0rem 1rem;'>
+					<span id='tag_11' class='lable'>
+						出生日期
+					</span>
+					<div id='tag_14' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='dtBirthday' type='date' class='input-date' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_15' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_16' class='lable'>
+						证件号码
+					</span>
+					<div id='tag_21' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtCertCode' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_28' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_29' class='lable'>
+						最高学历
+					</span>
+					<div id='lkpEducation' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_33' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_34' class='lable'>
+						紧急电话
+					</span>
+					<div id='tag_85' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtPhone' type='tel' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_32' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_37' class='lable'>
+						交通工具
+					</span>
+					<div id='lkpVehicleType' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_44' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_45' class='lable'>
+						户口性质
+					</span>
+					<div id='lkpResidentType' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_48' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_49' class='lable'>
+						婚姻状况
+					</span>
+					<div id='lkpMaritalStatus' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_52' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_53' class='lable'>
+						宗教信仰
+					</span>
+					<div id='lkpReligion' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_56' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_57' class='lable'>
+						属相
+					</span>
+					<div id='tag_41' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtAnimal' type='text' class='text' style='flex-grow: 1;' value='猪'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_60' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_61' class='lable'>
+						星座
+					</span>
+					<div id='tag_59' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtAstro' type='text' class='text' style='flex-grow: 1;' value='双鱼'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_64' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_65' class='lable'>
+						身高
+					</span>
+					<div id='tag_67' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='numHeight' type='number' class='text' style='width: 3rem;flex-grow: 1;' value='170'>
+						</input>
+						<span id='tag_123' class='lable'>
+							（厘米）
+						</span>
+					</div>
+				</div>
+				<div id='tag_68' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_69' class='lable'>
+						体重
+					</span>
+					<div id='tag_43' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='numWeight' type='number' class='text' style='flex-grow: 1;' value='50'>
+						</input>
+						<span id='tag_124' class='lable'>
+							（公斤）
+						</span>
+					</div>
+				</div>
+				<div id='tag_76' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_77' class='lable'>
+						籍贯
+					</span>
+					<div id='lkpNationality' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_3' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_4' class='lable'>
+						民族
+					</span>
+					<div id='lkpNation' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+			</div>
+			<div id='tag_81' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: 20rem;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_18' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_116' class='title-2'>
+						住址信息
+					</span>
+				</div>
+				<div id='tag_82' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_83' class='lable'>
+						户口地址
+					</span>
+					<div id='lkpNativeArea' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_87' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_88' class='lable'>
+						门牌号
+					</span>
+					<div id='tag_90' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtNativeAddress' type='text' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_86' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_91' class='lable'>
+						居住地址
+					</span>
+					<div id='lkpWorkplaceArea' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_94' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_95' class='lable'>
+						门牌号
+					</span>
+					<div id='tag_97' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtWorkplaceAddress' type='text' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+			</div>
+			<div id='tag_99' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: 16rem;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_80' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_117' class='title-1'>
+						绑定银行卡
+					</span>
+					<span id='tag_112' class='lable' style='margin: 0rem 0rem 0rem 1rem;'>
+						用于工资结算，实时到账
+					</span>
+				</div>
+				<div id='tag_100' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_101' class='lable'>
+						所属银行
+					</span>
+					<div id='lkpBank' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_104' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_105' class='lable'>
+						开户银行
+					</span>
+					<div id='tag_108' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtSubbank' type='text' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_110' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_111' class='lable'>
+						银行卡号
+					</span>
+					<div id='tag_138' class='group-h' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+						<input id='txtBankAccount' type='text' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='tag_20' class='group-h-m hsboss-bottom-bar'>
+			<button id='btnNext' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;font-size: 1.2rem;color: #FFF;'>
+				下一步
+			</button>
+		</div>
+	</div>
+</body>
+</html>

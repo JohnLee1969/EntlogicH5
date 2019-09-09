@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS_E.mob/RegisterEnterpriseForm2.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS_E.mob/AuditEnterpriseForm1.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_1' class='group-h-m hsboss-title-bar'>
+			<span id='btnBack' class='hsboss-title-bar-left-btn'>
+				
+			</span>
+			<span id='tag_4' class='title-1 hsboss-color-white' style='font-size: 1.5rem;font-weight: ormal;'>
+				企业认证
+			</span>
+		</div>
+		<div id='tag_6' class='group' style='position: absolute;top: 4rem;bottom: 5rem;left: 0rem;right: 0rem;padding: 1rem;overflow-y: auto;'>
+			<div id='tag_38' class='group-h' style='height: 3.5rem;padding: 0rem 2rem;'>
+				<button id='tag_39' class='button hsboss-border-blue hsboss-color-blue' style='width: 2.5rem;height: 2.5rem;border-radius: 50%;text-align:center;'>
+					1
+				</button>
+				<div id='tag_40' class='space hsboss-background-color-blue' style='height: 0.5rem;'>
+				</div>
+				<div id='tag_135' class='space hsboss-background-color-gray' style='height: 0.5rem;'>
+				</div>
+				<button id='tag_134' class='button hsboss-border-gray hsboss-color-gray' style='text-align:center;width: 2.5rem;height: 2.5rem;border-radius: 50%;text-align:center;'>
+					2
+				</button>
+				<div id='tag_47' class='space hsboss-background-color-gray' style='height: 0.5rem;'>
+				</div>
+				<div id='tag_136' class='space hsboss-background-color-gray' style='height: 0.5rem;'>
+				</div>
+				<button id='tag_45' class='button hsboss-border-gray hsboss-color-gray' style='width: 2.5rem;height: 2.5rem;border-radius: 50%;font-size: 1.5rem;'>
+					
+				</button>
+			</div>
+			<div id='tag_137' class='group-h' style='margin: 0rem 0rem 1rem 0rem;height: 2rem;padding: 0rem 1.3rem;'>
+				<span id='tag_140' class='lable hsboss-color-blue'>
+					上传资料
+				</span>
+				<div id='tag_141' class='space'>
+				</div>
+				<span id='tag_142' class='lable'>
+					开通服务
+				</span>
+				<div id='tag_143' class='space'>
+				</div>
+				<span id='tag_144' class='lable'>
+					平台审核
+				</span>
+			</div>
+			<div id='tag_48' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_8' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_9' class='title-2' style='flex-grow: 1;'>
+						上传营业执照
+					</span>
+				</div>
+				<div id='tag_36' class='group-h' style='height: 6rem;padding: 1rem;'>
+					<image id='imgLicencePic' class='image' style='width: 9rem;height: 100%;border-radius: 0.3rem;' src='../../common/images/null.jpg'>
+					</image>
+					<div id='tag_28' class='group-h' style='margin: 0rem 0rem 0rem 1rem;flex-grow: 1;'>
+						<div id='btnGetLicencePhoto' class='group-h hsboss-border-blue' style='height: 2.5rem;flex-grow: 1;padding: 0rem 0.8rem 0rem 0.8rem;border-radius: 0.3rem;'>
+							<span id='tag_53' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+								
+							</span>
+							<span id='tag_54' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+								相册选择
+							</span>
+						</div>
+						<div id='btnTakeLicencePhoto' class='group-h hsboss-border-blue' style='margin: 0rem 0rem 0rem 1rem;height: 2.5rem;flex-grow: 1;padding: 0rem 0.8rem 0rem 0.8rem;border-style: solid;border-width: 0.1rem;border-color: #0074ff;border-radius: 0.3rem;'>
+							<span id='tag_60' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+								
+							</span>
+							<span id='tag_61' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+								拍照
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_7' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_8' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_9' class='title-2' style='flex-grow: 1;'>
+						填写企业信息
+					</span>
+				</div>
+				<div id='tag_51' class='group-h hsboss-border-bottom-gray' style='height: 5rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_52' class='lable'>
+						所在城市
+					</span>
+					<div id='lkpRegionCode' class='lookup' style='flex-grow: 1;'>
+					</div>
+				</div>
+				<div id='tag_26' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_27' class='lable'>
+						企业类型
+					</span>
+					<div id='lkpMasterType' class='lookup' style='flex-grow: 1;'>
+					</div>
+				</div>
+				<div id='tag_10' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_11' class='lable'>
+						企业名称
+					</span>
+					<div id='tag_14' class='group-h' style='flex-grow: 1;'>
+						<input id='txtEnterpriseName' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_15' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_16' class='lable'>
+						统一社会信用代码
+					</span>
+					<div id='tag_19' class='group-h' style='flex-grow: 1;'>
+						<input id='txtCreditCode' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+			</div>
+			<div id='tag_33' class='group-v' style='margin: 0rem 0rem 1rem 0rem;width: 100%;height: auto;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_34' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_35' class='title-2' style='flex-grow: 1;'>
+						上传法人证件
+					</span>
+				</div>
+				<div id='tag_32' class='group-h' style='height: 6rem;padding: 1rem;'>
+					<image id='imgLpCertPicA' class='image' style='width: 9rem;height: 100%;'>
+					</image>
+					<div id='tag_63' class='group-v' style='margin: 0rem 0rem 0rem 1rem;width: 100px;height: 100%;flex-grow: 1;'>
+						<span id='tag_66' class='lable title-3' style='flex-grow: 1;'>
+							法人身份证（头像面）
+						</span>
+						<div id='tag_12' class='group-h' style='flex-grow: 1;'>
+							<div id='btnGetLpCertPhotoA' class='group-h hsboss-border-blue' style='height: 2.5rem;flex-grow: 1;padding: 0rem 0.8rem 0rem 0.8rem;border-radius: 0.3rem;'>
+								<span id='tag_46' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+									
+								</span>
+								<span id='tag_56' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+									相册选择
+								</span>
+							</div>
+							<div id='btnTakeLpCertPhotoA' class='group-h hsboss-border-blue' style='margin: 0rem 0rem 0rem 1rem;height: 2.5rem;flex-grow: 1;padding: 0rem 0.8rem 0rem 0.8rem;border-style: solid;border-width: 0.1rem;border-color: #0074ff;border-radius: 0.3rem;'>
+								<span id='tag_65' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+									
+								</span>
+								<span id='tag_68' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+									拍照
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id='tag_64' class='group-h' style='height: 6rem;padding: 1rem;'>
+					<image id='imgLpCertPicB' class='image' style='width: 9rem;height: 100%;'>
+					</image>
+					<div id='tag_72' class='group-v' style='margin: 0rem 0rem 0rem 1rem;width: 100px;height: 100%;flex-grow: 1;'>
+						<span id='tag_73' class='lable title-3' style='flex-grow: 1;'>
+							法人身份证（国徽面）
+						</span>
+						<div id='tag_17' class='group-h' style='flex-grow: 1;'>
+							<div id='btnGetLpCertPhotoB' class='group-h hsboss-border-blue' style='height: 2.5rem;flex-grow: 1;padding: 0rem 0.8rem 0rem 0.8rem;border-radius: 0.3rem;'>
+								<span id='tag_67' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+									
+								</span>
+								<span id='tag_69' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+									相册选择
+								</span>
+							</div>
+							<div id='btnTakeLpCertPhotoB' class='group-h hsboss-border-blue' style='margin: 0rem 0rem 0rem 1rem;height: 2.5rem;flex-grow: 1;padding: 0rem 0.8rem 0rem 0.8rem;border-style: solid;border-width: 0.1rem;border-color: #0074ff;border-radius: 0.3rem;'>
+								<span id='tag_71' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+									
+								</span>
+								<span id='tag_75' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+									拍照
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id='tag_21' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_22' class='lable'>
+						法人姓名
+					</span>
+					<div id='tag_115' class='group-h' style='flex-grow: 1;'>
+						<input id='txtLegalPerson' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_117' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_118' class='lable'>
+						法人证件
+					</span>
+					<div id='tag_145' class='group-h' style='flex-grow: 1;'>
+						<input id='txtLpCertCode' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+			</div>
+			<div id='tag_49' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: 16rem;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_50' class='group-h' style='height: 4rem;padding: 0.5rem 1rem 0.5rem 1rem;'>
+					<span id='tag_55' class='title-2' style='flex-grow: 1;'>
+						绑定银行卡
+					</span>
+				</div>
+				<div id='tag_57' class='group-h hsboss-border-bottom-gray' style='height: 5rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_58' class='lable'>
+						所属银行
+					</span>
+					<div id='lkpBank' class='lookup' style='flex-grow: 1;padding: 0rem 0rem 0rem 2rem;'>
+					</div>
+				</div>
+				<div id='tag_88' class='group-h hsboss-border-bottom-gray' style='height: 5rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_89' class='lable'>
+						开户银行
+					</span>
+					<div id='tag_92' class='group-h' style='flex-grow: 1;'>
+						<input id='txtSubbank' type='text' class='text' style='width: 3rem;flex-grow: 1;' value='南宁青秀支行'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_94' class='group-h hsboss-border-bottom-gray' style='height: 5rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_95' class='lable'>
+						银行卡号
+					</span>
+					<div id='tag_98' class='group-h' style='flex-grow: 1;'>
+						<input id='txtBankAccount' type='text' class='text' style='width: 3rem;flex-grow: 1;' value='1000 5300 1234 6565464'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_2' class='group-h' style='height: 5rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_20' class='lable'>
+						统一社会信用代码
+					</span>
+					<div id='tag_37' class='group-h' style='flex-grow: 1;'>
+						<input id='txtInvoiceCode' type='text' class='text' style='width: 3rem;flex-grow: 1;' value='1000 5300 1234 6565464'>
+						</input>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='tag_42' class='group-h-m' style='position: absolute;height: 5rem;bottom: 0rem;left: 0rem;right: 0rem;padding: 0rem 1rem;'>
+			<button id='btnNext' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;font-size: 1.3rem;color: #FFF;'>
+				确定提交
+			</button>
+		</div>
+	</div>
+</body>
+</html>

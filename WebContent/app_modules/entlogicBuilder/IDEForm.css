@@ -1,0 +1,40 @@
+body {
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+
+.eb-input {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	vertical-align:middle;
+	border-style: none;
+
+	color: #555;	
+	background-color: transparent;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow:1px 0px 1px #888;
+}
+
+.tree-node {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: 1000px;
+	height: 24px;
+	background-color: transparent;
+}
+
+.tree-node-selected {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: 1000px;
+	height: 24px;
+	background-color: #E9F6FA;
+}

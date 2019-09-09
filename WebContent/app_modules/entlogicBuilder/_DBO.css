@@ -1,0 +1,75 @@
+.treeview {
+	padding: 8px;
+	width: auto;
+	height: auto;
+	z-index: 10;
+}
+
+.tree-node {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: auto;
+	height: 24px;
+	
+	color: #000;
+	background-color: transparent;
+}
+
+.tree-node-selected {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: auto;
+	height: 24px;
+	
+	color: #000;
+	background-color: #E9F6FA;
+}
+
+.property-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+	
+	width: 100%;
+	padding: 4px;
+}
+
+.property-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 24px;
+	padding: 1px;
+}
+
+.property-name {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	
+	text-align: right;
+	width: 116px;
+}
+
+.property-value {
+	flex-grow: 1;
+	
+	width: 80px;
+	height: 22px;
+	background-color: #FFF;
+	padding: 4px;
+	border: none;
+	
+	color: #555;	
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+}

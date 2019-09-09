@@ -1,0 +1,70 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//  应用常量声明    
+
+// 全局应用
+var application = parent.application;
+
+// 应用的根目录
+var applicationRoot = parent.applicationRoot;
+
+//应用的根目录
+var sessionId = parent.sessionId;
+
+// 页面控件容器
+var formControls = new Array();
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 数据组件声明    
+var dtControl= {};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 交互组件声明   
+var tvwControl = {};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//内部函数声明
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 内部函数声明
+
+/**
+ * 组件初始化
+ */ 
+function initComponents() {
+	// 初始化数据组件
+	dtControl = new entlogic_data_table();
+	
+	// 初始化交互组件
+	tvwControl = new entlogic_ui_treeview("tvwControl", formControls);
+	tvwControl.setBindingData(dtControl);
+};
+
+/**
+ * 
+ */
+function loadControls() {
+    if (application == null) return;
+	var dataPackage = postBpForm("com.entlogic.h5.builder.forms._ToolBox", "loadControls", formControls);
+	dataPackage.fillDataTable(dtControl, "dtControl");
+};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 交互事件响应
+
+/**
+ * 父页面打开事件处理
+ */ 
+function bodyOnload() {
+	// 调用组件初始化
+    initKeys();
+	initComponents();
+	
+	// 加载控件列表
+	loadControls();
+};

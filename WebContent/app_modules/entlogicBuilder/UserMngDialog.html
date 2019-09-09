@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='UserMngDialog.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='UserMngDialog.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='divScreen' class='group-h' style='width: 600px;height: 400px;padding: 12px;'>
+		<div id='tag_1' class='group-v eui-panel' style='width: 280px;height: 100%;'>
+			<div id='tag_2' class='group-h eui-panel-title-bar' style='height: 28px;'>
+				<span id='tag_3' class='eb-lable'>
+					团队用户列表
+				</span>
+				<div id='tag_4' class='space'>
+				</div>
+				<button id='btnAdd' class='button eb-link-btn'>
+					+ 添加
+				</button>
+				<button id='btnDelete' class='button eb-link-btn'>
+					- 删除
+				</button>
+			</div>
+			<div id='tag_8' class='group-v eui-panel-content' style='height: 100%;flex-grow: 1;'>
+				<div id='lstUser' class='listview' style='height: 30px;flex-grow: 1;'>
+					<div id='tag_15' class='eb-text'>
+						 #[USER_NAME]#
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='tag_9' class='space' style='width: 12px;height: 100%;'>
+		</div>
+		<div id='tag_6' class='group-v eui-panel' style='width: 360px;height: 100%;flex-grow: 1;'>
+			<div id='tag_10' class='group-h eui-panel-title-bar' style='height: 28px;'>
+				<span id='tag_11' class='eb-lable'>
+					用户资料编辑
+				</span>
+			</div>
+			<div id='tag_12' class='group-v eui-panel-content' style='flex-grow: 1;padding: 12px;'>
+				<div id='tag_13' class='group-h' style='height: 36px;'>
+					<span id='tag_14'>
+						用户类型
+					</span>
+					<select id='selUserType' class='eb-input' style='flex-grow: 1;'>
+						<option id='tag_16' value='administrator'>
+							管理员
+						</option>
+						<option id='tag_17' value='developer'>
+							开发员
+						</option>
+						<option id='tag_17' value='testor'>
+							测试员
+						</option>
+					</select>
+				</div>
+				<div id='tag_18' class='group-h' style='height: 36px;'>
+					<span id='tag_19'>
+						登录名称
+					</span>
+					<input id='txtUserName' type='text' class='eb-input' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_21' class='group-h' style='height: 36px;'>
+					<span id='tag_22'>
+						登录密码
+					</span>
+					<input id='txtPassword' type='text' class='eb-input' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_27' class='space'>
+				</div>
+				<div id='tag_28' class='group-h' style='height: 28px;'>
+					<div id='tag_29' class='space'>
+					</div>
+					<button id='btnSave' class='button eui-btn' style='margin: 0px;width: 60px;'>
+						保存
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

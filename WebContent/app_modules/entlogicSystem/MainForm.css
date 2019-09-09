@@ -1,0 +1,25 @@
+.tree-node {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: auto;
+	height: 36px;
+	
+	color: #000;
+	background-color: transparent;
+}
+
+.tree-node-selected {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	overflow: hidden;
+	width: auto;
+	height: 36px;
+	
+	color: #000;
+	background-color: #437070;
+}

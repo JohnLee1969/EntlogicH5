@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='EnterpriseDoc.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='EnterpriseDoc.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_2' class='group' style='position: absolute;height: 32px;top: 0px;left: 0px;right: 0px;'>
+			<div id='tag_4' class='group-h eui-panel-title-bar'>
+				<span id='lblDocTitle' class='label eui-panel-title'>
+					档案标题
+				</span>
+				<div id='tag_8' class='space'>
+				</div>
+				<button id='btnFixWidth' class='button eui-link-btn'>
+					⇆ 页宽
+				</button>
+				<button id='btnFixHeight' class='button eui-link-btn'>
+					⇅ 页高
+				</button>
+				<button id='btnZoomDown' class='button eui-link-btn'>
+					- 缩小
+				</button>
+				<button id='btnZoomUp' class='button eui-link-btn'>
+					+ 放大
+				</button>
+				<button id='btnRestore' class='button eui-link-btn'>
+					↻ 还原
+				</button>
+				<button id='btnSave' class='button eui-link-btn'>
+					 保存
+				</button>
+			</div>
+		</div>
+		<div id='divPageView' class='group' style='position: absolute;top: 32px;bottom: 0px;left: 0px;right: 0px;padding: 6px;background-color: #AAA;overflow-x: auto;overflow-y: auto;'>
+			<div id='divPage' class='group-v eui-doc-page' style='width: 630px;height: 891px;padding: 24px;'>
+				<div id='tag_1' class='group-v' style='width: 100%;height: 48px;'>
+					<span id='tag_3' class='lable' style='margin: auto;width: auto;font-size: 18px;font-weight: bold;'>
+						家政企业基本信息登记表
+					</span>
+				</div>
+				<div id='tag_5' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_6' class='lable'>
+						企业编码：
+					</span>
+					<input id='txtCreditCode' type='text' class='text' style='width: 100px;flex-grow: 1;'>
+					</input>
+					<span id='tag_37' class='lable' style='margin: 0px 0px 0px 6px;'>
+						运行状态：
+					</span>
+					<select id='selStatus' class='select' style='width: 100px;flex-grow: 1;'>
+						<option id='tag_39' value='#[CODE]#'>
+							#[CODE_NAME]#
+						</option>
+					</select>
+				</div>
+				<div id='tag_9' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_10' class='lable'>
+						企业名称：
+					</span>
+					<input id='txtName' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_12' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_13' class='lable'>
+						注册资本：
+					</span>
+					<input id='numRegisteredCapital' type='number' class='number' style='width: 100px;flex-grow: 1;'>
+					</input>
+					<span id='tag_15' class='lable' style='margin: 0px 0px 0px 6px;'>
+						注册日期：
+					</span>
+					<div id='dtRegistDate' class='datetime' style='width: 100px;flex-grow: 1;'>
+					</div>
+				</div>
+				<div id='tag_17' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_18' class='lable'>
+						注册省区：
+					</span>
+					<div id='lkpRegionCode' class='lookup' style='flex-grow: 1;'>
+					</div>
+				</div>
+				<div id='tag_20' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_21' class='lable'>
+						注册地址：
+					</span>
+					<input id='txtRegisteredAddress' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_23' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_24' class='lable'>
+						法人姓名：
+					</span>
+					<input id='txtLegalPerson' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_26' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_27' class='lable'>
+						法人证件：
+					</span>
+					<select id='selLpCertType' class='select' style='width: 140px;'>
+						<option id='tag_30' value='#[CODE]#'>
+							#[CODE_NAME]#
+						</option>
+					</select>
+					<input id='txtLpCertCode' type='text' class='text' style='width: 100px;flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_31' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_32' class='lable'>
+						联系电话：
+					</span>
+					<input id='txtTel' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_34' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_35' class='lable'>
+						电子邮件：
+					</span>
+					<input id='txtEmail' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_40' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_41' class='lable'>
+						经营范围：
+					</span>
+				</div>
+				<div id='tag_42' class='group-h' style='width: 100%;height: 100px;flex-grow: 1;padding: 2px;'>
+					<textarea id='txtBusinessScope' class='textarea' style='margin: 0px;width: 100%;height: 100%;'>
+					</textarea>
+				</div>
+				<div id='tag_43' class='group-h' style='width: 100%;height: 36px;'>
+					<span id='tag_44' class='lable'>
+						备注信息：
+					</span>
+				</div>
+				<div id='tag_45' class='group-h' style='width: 100%;height: 100px;flex-grow: 1;padding: 2px;'>
+					<textarea id='txtNote' class='textarea' style='margin: 0px;width: 100%;height: 100%;'>
+					</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

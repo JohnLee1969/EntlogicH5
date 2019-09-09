@@ -1,0 +1,230 @@
+body {
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+
+table {
+	width: 100%;
+	border: 0px solid transparent !important; 
+}
+
+table head {
+	border: 0px solid transparent !important; 
+}
+
+table th {
+	border: 0px solid transparent !important;  
+	font-weight: normal;
+	color: #555555;
+}
+
+table tr {
+	border: 0px solid transparent !important; 
+}
+
+table td {
+	border: 0px solid transparent !important; 
+	color: #555555;
+}
+
+input {
+	padding: 4px;
+	height: 28px;
+	background-color: #F8F8F8;
+	border: none;
+	border-radius: 4px;
+}
+
+.block {
+	display: inline-block;
+	width: 20px;
+}
+
+.eb-highlight {
+	position: absolute;
+	z-index: 500;
+	
+	top: 10px;
+	left: 10px;	
+	width: 300px;
+	height: 300px;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: #F00;	
+}
+
+.eb-lable {
+	margin-left: 2px;
+	 
+	font-family: "iconfont" !important;
+	color: #555;	
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow:1px 0px 1px #888;
+}
+
+.eb-text {
+	font-family: "iconfont" !important;
+	color: #555;	
+	font-size: 12px;
+}
+
+.eb-input {
+	height: 26px;
+	vertical-align:middle;
+	margin-left: 4px;
+	color: #555;	
+	font-size: 12px;
+	background-color: #F8F8F8;
+	border: none;
+	border-radius: 4px;
+}
+
+.eb-btn {
+	font-family: "iconfont" !important;
+	width: auto;
+	hieght: 14px;
+	margin-left: 2px;
+	padding-top: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	color: #FFF;
+	background-color: #AAA;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #777;
+}
+
+.eb-btn:hover {
+	font-family: "iconfont" !important;
+	width: auto;
+	hieght: 14px;
+	margin: 0px 2px;
+	font-size:12px; 
+	color: #FFF;
+	background-color: #888;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #777;
+}
+
+
+.eb-link-btn {
+	font-family: "iconfont" !important;
+	font-size:12px; 
+	color: #555;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #888;
+}
+
+.eb-link-btn:hover {
+	font-family: "iconfont" !important;
+	font-size:12px; 
+	color: #000;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #888;
+}
+
+.eb-iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	
+	padding: 0px;
+	border-style: none;
+}
+
+.eb-iframe-mobile {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 414px;
+    height: 736px;
+	
+	padding: 0px;
+	border-style: none;
+	overflow: hidden;
+}
+
+.eb-check-btn {
+	hieght: 22px;
+	margin: 0px 2px;
+	padding: 2px 6px;
+	
+	font-family: "iconfont" !important;
+	color: #FFF;
+	background-color: #BBB;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #888;
+}
+
+.eb-check-btn:hover {
+	hieght: 22px;
+	margin: 0px 2px;
+	padding: 2px 6px;
+	font-size:12px; 
+	
+	font-family: "iconfont" !important;
+	color: #FFF;
+	background-color: #555;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #888;
+}
+
+
+.eb-check-btn-checked {
+	hieght: 22px;
+	margin: 0px 2px;
+	padding: 2px 6px;
+	font-size:12px; 
+	
+	font-family: "iconfont" !important;
+	color: #FFF;
+	background-color: #888;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	text-shadow:1px 0px 1px #888;
+}
+
+.eb-mouse-right-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+	
+	position: absolute;
+	padding:16px;
+	width: auto;
+	height: auto;
+ 	
+	background-color: #EEEEEE; 
+	box-shadow:1px 1px 6px #444;	
+	border: none;
+	
+	z-index: 1000;
+}
+
+.eb-mouse-right-menu-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	cursor: pointer;
+	overflow: hidden;
+	
+	font-family: "iconfont" !important;
+}

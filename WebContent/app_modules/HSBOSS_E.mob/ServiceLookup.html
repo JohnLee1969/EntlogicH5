@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='ServiceLookup.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='ServiceLookup.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_1' class='group-h' style='position: absolute;height: 4rem;top: 0px;left: 0px;right: 0px;padding: 0rem 1rem;background-color: #0074ff;'>
+			<span id='tag_2' class='lable title-2' style='flex-grow: 1;color: #FFF;'>
+				选择服务产品
+			</span>
+			<button id='btnExit' class='button' style='height: 4rem;font-size: 2rem;color: #FFF;'>
+				
+			</button>
+		</div>
+		<div id='tag_4' class='group' style='position: absolute;top: 3.6rem;bottom: 0rem;left: 0rem;right: 0rem;padding: 1rem;overflow-y: auto;'>
+			<div id='tag_5' class='group-v' style='margin: 0rem 0rem 1rem 0rem;width: 100%;height: 30rem;padding: 0rem 0rem 1rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_6' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_7' class='title-2' style='flex-grow: 1;'>
+						服务产品列表
+					</span>
+				</div>
+				<div id='tag_9' class='group-h' style='height: 3rem;flex-grow: 1;'>
+					<div id='lstServiceType' class='listview group-v' style='width: 20%;height: 100%;padding: 0rem 0rem 0rem 1rem;background-color: #FFF;'>
+						<div id='tag_11' class='group-h-m' style='height: 3rem;'>
+							<span id='tag_12' class='lable' style='width: auto;height: auto;color: inherit;'>
+								#[CODE_NAME]#
+							</span>
+						</div>
+					</div>
+					<div id='tag_13' class='group-v' style='width: 80%;height: 100%;'>
+						<div id='lstService' class='listview group-t' style='height: 100%;padding: 0rem 1rem;'>
+							<div id='tag_15' class='group-v-m' style='width: 8rem;height: 3rem;border-radius: 1.5rem;'>
+								<span id='tag_16' class='lable' style='margin: 0.3rem;'>
+									#[ANOTHER_NAMER]#
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_17' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0rem 0rem 1rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_18' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_19' class='title-2' style='flex-grow: 1;'>
+						服务产品详情
+					</span>
+					<button id='btnSelect' class='button hsboss-background-color-green hsboss-color-white' style='height: 2.2rem;padding: 0rem 1rem;border-radius: 1.3rem;font-size: 0.8rem;'>
+						 保存
+					</button>
+				</div>
+				<div id='tag_29' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_30' class='lable'>
+						产品名称
+					</span>
+					<div id='tag_31' class='space'>
+					</div>
+					<div id='tag_32' class='group-h hsboss-input-box'>
+						<input id='txtAnotherNamer' type='text' class='text' style='width: 3rem;flex-grow: 1;' value='家庭保洁'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_21' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_22' class='lable'>
+						平台定价
+					</span>
+					<div id='tag_24' class='space'>
+					</div>
+					<div id='tag_25' class='group-h hsboss-input-box'>
+						<input id='numRate' type='number' class='text' style='width: 3rem;flex-grow: 1;' value='100'>
+						</input>
+						<span id='lblUnit' class='lable'>
+							（元/小时）
+						</span>
+					</div>
+				</div>
+				<div id='tag_36' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_38' class='lable'>
+						产品服务内容说明
+					</span>
+				</div>
+				<div id='tag_23' class='group-h' style='height: auto;padding: 0rem 1rem 0rem 1rem;'>
+					<textarea id='txtServiceDesc' class='textarea' style='height: 12rem;flex-grow: 1;font-size: 1rem;color: #999;'>
+					</textarea>
+				</div>
+			</div>
+			<div id='tag_33' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0rem 0rem 1rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_34' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_35' class='title-2' style='flex-grow: 1;'>
+						相关优惠策略
+					</span>
+				</div>
+				<div id='lstFavourable' class='listview'>
+					<div id='tag_40'>
+						#[FAVOURABLE_TYPE_TEXT]#
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

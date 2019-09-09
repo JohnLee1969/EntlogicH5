@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS/WorkerSearch.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group-v eui-dock-panel' style='position: absolute;width: 300px;top: 0px;bottom: 0px;padding: 12px;'>
+		<div id='tag_30' class='group-h eui-panel-title-bar' style='height: 32px;padding: 0px 6px;border-radius: 8px;'>
+			<span id='tag_31' class='label eui-panel-title'>
+				检索条件
+			</span>
+			<div id='tag_32' class='space'>
+			</div>
+			<button id='btnSearch' class='button eui-link-btn'>
+				 搜索
+			</button>
+			<button id='btnClose' class='button eui-link-btn' style='margin: 0px 0px 0px 4px;'>
+				✖
+			</button>
+		</div>
+		<div id='tag_1' class='group-v' style='width: 100%;height: 100px;flex-grow: 1;padding: 6px;'>
+			<div id='tag_5' class='group-h' style='height: 36px;'>
+				<span id='tag_13' class='lable'>
+					证件号码：
+				</span>
+			</div>
+			<div id='tag_18' class='group-h' style='height: 36px;background-color: #F5F5F5;'>
+				<input id='txtCertCode' type='text' class='text' style='width: 100%;height: 100%;'>
+				</input>
+			</div>
+			<div id='tag_10' class='group-h' style='height: 36px;'>
+				<span id='tag_11' class='lable'>
+					人员姓名：
+				</span>
+			</div>
+			<div id='tag_33' class='group-h' style='height: 36px;background-color: #F5F5F5;'>
+				<input id='txtName' type='text' class='text' style='width: 100%;height: 100%;'>
+				</input>
+			</div>
+			<div id='tag_2' class='group-h' style='height: 36px;'>
+				<span id='tag_3' class='lable'>
+					人员性别：
+				</span>
+			</div>
+			<div id='tag_4' class='group-h' style='height: 36px;background-color: #F5F5F5;'>
+				<div id='lstSex' class='list group-h'>
+					<div id='tag_6'>
+						#[text]#
+					</div>
+				</div>
+			</div>
+			<div id='tag_7' class='group-h' style='height: 36px;'>
+				<span id='tag_8' class='lable'>
+					年龄范围：
+				</span>
+			</div>
+			<div id='tag_12' class='group-v' style='height: 80px;background-color: #F5F5F5;'>
+				<div id='lstAge' class='list  group-t'>
+					<div id='tag_14'>
+						#[text]#
+					</div>
+				</div>
+			</div>
+			<div id='tag_15' class='group-h' style='height: 36px;'>
+				<span id='tag_16' class='lable'>
+					工龄范围：
+				</span>
+			</div>
+			<div id='tag_17' class='group-v' style='height: 80px;background-color: #F5F5F5;'>
+				<div id='lstWorkingYears' class='list group-t'>
+					<div id='tag_19'>
+						#[text]#
+					</div>
+				</div>
+			</div>
+			<div id='tag_20' class='group-h' style='height: 36px;'>
+				<span id='tag_21' class='lable'>
+					外语方言：
+				</span>
+			</div>
+			<div id='tag_22' class='group-v' style='height: 100px;flex-grow: 1;background-color: #F5F5F5;'>
+				<div id='lstLanguage' class='list group-t'>
+					<div id='tag_24' class='group-h' style='height: 36px;'>
+						#[text]#
+					</div>
+				</div>
+			</div>
+			<div id='tag_25' class='group-h' style='height: 36px;'>
+				<span id='tag_26' class='lable'>
+					工作技能：
+				</span>
+			</div>
+			<div id='tag_27' class='group-v' style='height: 100px;flex-grow: 1;background-color: #F5F5F5;overflow-y: auto;'>
+				<div id='lstSkill' class='list group-t'>
+					<div id='tag_29' class='group-h' style='height: 36px;'>
+						#[text]#
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS_E.mob/OrderDispatchForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group'>
+		<div id='tag_1' class='group-h-m hsboss-title-bar'>
+			<span id='btnBack' class='hsboss-title-bar-left-btn'>
+				
+			</span>
+			<span id='tag_4' class='title-1 hsboss-color-white' style='font-size: 1.5rem;'>
+				手动派单
+			</span>
+		</div>
+		<div id='tag_34' class='group' style='position: absolute;top: 4rem;bottom: 5rem;left: 0rem;right: 0rem;overflow-y: auto;'>
+			<div id='tag_6' class='group-v' style='margin: 1rem;height: auto;padding: 1rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_7' class='group-h' style='padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_8' class='title-2'>
+						雇主需求
+					</span>
+				</div>
+				<div id='tag_9' class='group-h hsboss-border-bottom-gray' style='flex-grow: 1;padding: 1rem;'>
+					<span id='tag_10' class='lable'>
+						称呼
+					</span>
+					<div id='tag_12' class='space'>
+					</div>
+					<span id='lblName' class='lable'>
+						称呼
+					</span>
+				</div>
+				<div id='tag_14' class='group-h hsboss-border-bottom-gray' style='padding: 1rem;'>
+					<span id='tag_15' class='lable'>
+						手机号码
+					</span>
+					<div id='tag_17' class='space'>
+					</div>
+					<span id='lblPhone' class='lable'>
+						手机号码
+					</span>
+				</div>
+				<div id='tag_20' class='group-h hsboss-border-bottom-gray' style='padding: 1rem;'>
+					<span id='tag_21' class='lable'>
+						服务项目
+					</span>
+					<div id='tag_23' class='space'>
+					</div>
+					<span id='lblServiceName' class='lable'>
+						服务项目
+					</span>
+				</div>
+				<div id='tag_13' class='group-h hsboss-border-bottom-gray' style='padding: 1rem;'>
+					<span id='tag_16' class='lable'>
+						套餐选择
+					</span>
+					<div id='tag_18' class='space'>
+					</div>
+					<span id='lblPackages' class='lable'>
+						套餐
+					</span>
+				</div>
+				<div id='tag_25' class='group-h hsboss-border-bottom-gray' style='padding: 1rem;'>
+					<span id='tag_26' class='lable'>
+						预约时间
+					</span>
+					<div id='tag_28' class='space'>
+					</div>
+					<span id='lblApointTime' class='lable'>
+						预约时间
+					</span>
+				</div>
+				<div id='tag_30' class='group-h hsboss-border-bottom-gray' style='padding: 1rem;'>
+					<span id='tag_31' class='lable' style='padding: 0rem 0rem 0rem 0rem;'>
+						服务地址
+					</span>
+					<div id='tag_27' class='space'>
+					</div>
+					<span id='lblAddress' class='lable'>
+						服务地址
+					</span>
+				</div>
+				<div id='tag_35' class='group-h' style='padding: 1rem;'>
+					<span id='tag_36' class='lable'>
+						费用合计
+					</span>
+					<div id='tag_19' class='space'>
+					</div>
+					<span id='tag_2' class='lable' style='color: #FF9800;'>
+						￥
+					</span>
+					<span id='lblCost' class='lable' style='color: #FF9800;'>
+						费用合计
+					</span>
+				</div>
+				<div id='tag_66' class='group-h' style='padding: 0rem 1rem 0rem 1rem;'>
+					<div id='tag_11' class='space'>
+					</div>
+					<span id='tag_67' class='note'>
+						分账比例：阿姨￥80、公司￥15、平台￥5
+					</span>
+				</div>
+			</div>
+			<div id='tag_24' class='group' style='margin: 1rem;background-color: #FFF;'>
+				<div id='tag_41' class='group-h hsboss-border-bottom-gray'>
+					<span id='tag_57' class='title-2' style='padding: 1rem;'>
+						选择阿姨
+					</span>
+				</div>
+				<div id='lstSeclectedWorker' class='group-h'>
+					<div id='tag_55' class='group-h' style='margin: 0rem 1rem 1rem 1rem;flex-grow: 1;padding: 1rem;'>
+						<div id='tag_29' class='group-v-m' style='width: 4rem;'>
+							<image id='tag_32' class='image' style='width: 4rem;height: 4rem;border-radius: 50%;' src='../..#[HEAD_PIC]#'>
+							</image>
+						</div>
+						<div id='tag_42' class='group-v' style='margin: 0rem 1rem 0rem 1rem;flex-grow: 1;'>
+							<div id='tag_43' class='group-h' style='width: 100%;height: 2rem;'>
+								<span id='tag_44' class='title-2' style='padding: 0rem 1rem 0rem 0rem;'>
+									#[NAME]#
+								</span>
+								<div id='tag_45' class='group-h'>
+									<span id='tag_56' class='hsboss-color-blue hsboss-border-blue' style='margin: 0rem 0rem 0rem 0.5rem;height: 1.5rem;padding: 0rem 0.5rem 0rem 0.5rem;border-radius: 1.5rem;font-size: 1rem;'>
+										5级星月嫂
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='lstWorker' class='list' style='height: auto;border-radius: 0.3rem;'>
+				<div id='tag_33' class='group-h' style='margin: 0rem 1rem 1rem 1rem;flex-grow: 1;padding: 1rem;'>
+					<div id='tag_37' class='group-v-m' style='width: 4rem;'>
+						<image id='tag_38' class='image' style='width: 4rem;height: 4rem;border-radius: 50%;' src='../..#[HEAD_PIC]#'>
+						</image>
+					</div>
+					<div id='tag_39' class='group-v' style='margin: 0rem 1rem 0rem 1rem;flex-grow: 1;'>
+						<div id='tag_40' class='group-h' style='width: 100%;height: 2rem;'>
+							<span id='tag_46' class='title-2' style='padding: 0rem 1rem 0rem 0rem;'>
+								#[NAME]#
+							</span>
+							<div id='tag_47' class='group-h'>
+								<span id='tag_48' class='hsboss-color-blue hsboss-border-blue' style='margin: 0rem 0rem 0rem 0.5rem;height: 1.5rem;padding: 0rem 0.5rem 0rem 0.5rem;border-radius: 1.5rem;font-size: 1rem;'>
+									5级星月嫂
+								</span>
+							</div>
+						</div>
+					</div>
+					<button id='tag_52' class='button' style='font-size: 2rem;color: #0074FF;'>
+						
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id='tag_22' class='group-h' style='position: absolute;bottom: 0rem;left: 0rem;right: 0rem;padding: 0.5rem;'>
+			<button id='btnDispatch' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;color: #FFF;'>
+				确认派单
+			</button>
+		</div>
+	</div>
+</body>
+</html>

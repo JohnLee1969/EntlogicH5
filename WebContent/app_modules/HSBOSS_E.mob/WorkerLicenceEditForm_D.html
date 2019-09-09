@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS_E.mob/WorkerLicenceEditForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_28' class='group-h  hsboss-background-color-blue' style='position: absolute;height: 4rem;top: 0px;left: 0px;right: 0px;'>
+			<div id='tag_22' class='space' style='flex-grow: 1;'>
+			</div>
+			<span id='tag_30' class='lable title-1' style='color: #FFF;'>
+				编辑证书信息
+			</span>
+			<div id='tag_25' class='space' style='flex-grow: 1;'>
+			</div>
+		</div>
+		<div id='tag_6' class='group' style='position: absolute;top: 4rem;bottom: 5rem;left: 0rem;right: 0rem;padding: 1rem;overflow-y: auto;'>
+			<div id='tag_9' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_10' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_11' class='title-2'>
+						证书登记信息
+					</span>
+				</div>
+				<div id='tag_12' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_79' class='lable'>
+						证书类别
+					</span>
+					<span id='tag_14' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<div id='lkpCertType' class='lookup ' style='flex-grow: 1;'>
+					</div>
+				</div>
+				<div id='tag_17' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_13' class='lable'>
+						证书编号
+					</span>
+					<span id='tag_19' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<div id='tag_21' class='group-h ' style='flex-grow: 1;'>
+						<input id='txtCertCode' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+				</div>
+				<div id='tag_55' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 0rem 0rem 1rem;'>
+					<span id='tag_56' class='lable'>
+						生效日期
+					</span>
+					<span id='tag_57' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<input id='dtEffectiveDate' type='date' class='input-date' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_62' class='group-h' style='height: 4rem;padding: 0rem 0rem 0rem 1rem;'>
+					<span id='tag_63' class='lable'>
+						失效日期
+					</span>
+					<span id='tag_64' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<input id='dtExpiryDate' type='date' class='input-date' style='flex-grow: 1;'>
+					</input>
+				</div>
+			</div>
+			<div id='tag_2' class='group-v' style='margin: 0rem 0rem 1rem 0rem;width: 100%;height: auto;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_8' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_18' class='title-2' style='flex-grow: 1;'>
+						证书图片信息
+					</span>
+					<div id='tag_1' class='group-h'>
+						<div id='btnGetPhoto' class='group-h hsboss-border-blue' style='height: 2.5rem;padding: 0rem 0.8rem 0rem 0.8rem;border-radius: 0.3rem;'>
+							<span id='tag_16' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+								
+							</span>
+							<span id='tag_20' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+								相册选择
+							</span>
+						</div>
+						<div id='btnTakePhoto' class='group-h hsboss-border-blue' style='margin: 0rem 0rem 0rem 1rem;height: 2.5rem;padding: 0rem 0.8rem 0rem 0.8rem;border-style: solid;border-width: 0.1rem;border-color: #0074ff;border-radius: 0.3rem;'>
+							<span id='tag_23' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+								
+							</span>
+							<span id='tag_24' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+								拍照
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id='lstPic' class='listview group-t' style='padding: 0rem 1rem 0.5rem 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+					<div id='tag_3' class='group' style='margin: 0rem 0.2rem 1rem 0.2rem;width: 14rem;height: 14rem;'>
+						<image id='tag_4' class='image' style='width: 100%;height: 100%;background-color: #A9A9A9;border-radius: 0.3rem;' src='../..#[FILE_PATH]#'>
+						</image>
+						<button id='tag_5' class='button btnDeletePic' style='position: relative;top: -14rem;right: -11.5rem;font-size: 1.5rem;color: #ff0000;'>
+							
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='tag_7' class='group-h-m' style='position: absolute;height: 5rem;bottom: 0rem;left: 0rem;right: 0rem;padding: 0rem 1rem;'>
+			<button id='btnBack' class='button hsboss-background-color-blue' style='margin: 0rem 1rem 0rem 0rem;height: 4rem;flex-grow: 1;background-color: #AAA;border-radius: 2rem;font-size: 1.2rem;color: #FFF;'>
+				取消
+			</button>
+			<button id='btnSave' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;font-size: 1.2rem;color: #FFF;'>
+				保存
+			</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS/WorkerMerEditDialog.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='divScreen' class='group-v' style='width: 400px;height: 500px;padding: 12px;'>
+		<div id='tag_1' class='group-v' style='height: 36px;flex-grow: 1;'>
+			<div id='tag_2' class='group-h' style='width: 100%;height: 36px;'>
+				<span id='tag_3' class='lable'>
+					体检中心
+				</span>
+				<input id='txtMec' type='text' class='text' style='flex-grow: 1;'>
+				</input>
+			</div>
+			<div id='tag_5' class='group-h' style='height: 36px;'>
+				<span id='tag_6' class='lable'>
+					体检日期
+				</span>
+				<div id='dtMeDate' type='date' class='datetime' style='flex-grow: 1;'>
+				</div>
+			</div>
+			<div id='tag_8' class='group-h' style='width: 100%;height: 36px;'>
+				<span id='tag_12' class='lable'>
+					体检结果
+				</span>
+				<select id='selResult' class='select' style='flex-grow: 1;'>
+					<option id='tag_14' value='#[CODE]#'>
+						#[CODE_NAME]#
+					</option>
+				</select>
+			</div>
+			<div id='tag_15' class='group-h' style='width: 100%;height: 36px;'>
+				<span id='tag_16' class='lable'>
+					备注信息：
+				</span>
+			</div>
+			<div id='tag_17' class='group-h' style='width: 100%;height: 100px;flex-grow: 1;'>
+				<textarea id='txtNote' class='textarea' style='margin: 0px;width: 100%;height: 100%;'>
+				</textarea>
+			</div>
+		</div>
+		<div id='tag_9' class='group-h' style='height: 12px;'>
+		</div>
+		<div id='tag_10' class='group-h' style='height: 28px;'>
+			<div id='tag_11' class='space'>
+			</div>
+			<button id='btnSave' class='button eui-btn' style='width: 60px;'>
+				保存
+			</button>
+		</div>
+	</div>
+</body>
+</html>

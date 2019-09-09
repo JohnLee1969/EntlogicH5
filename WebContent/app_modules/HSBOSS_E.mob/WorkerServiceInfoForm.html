@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='WorkerServiceInfoForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='WorkerServiceInfoForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group ' style='position: absolute;top: 0rem;bottom: 0rem;left: 0rem;right: 0rem;'>
+		<div id='tag_17' class='group-h-m hsboss-title-bar' style='height: 4rem;'>
+			<span id='btnBack' class='button hsboss-title-bar-left-btn'>
+				
+			</span>
+			<span id='tag_23' class='title-1 hsboss-color-white'>
+				建档立卡
+			</span>
+		</div>
+		<div id='tag_8' class=' group-h-m emui-tab-head-h' style='height: 4rem;'>
+			<span id='tabBaseInfo' class='emui-tab-h'>
+				基本信息
+			</span>
+			<span id='tabSkillInfo' class='emui-tab-h'>
+				工作技能
+			</span>
+			<span id='tabServiceInfo' class='emui-tab-selected-h'>
+				签约服务
+			</span>
+			<span id='tabMediaInfo' class='emui-tab-h'>
+				照片视频
+			</span>
+		</div>
+		<div id='tag_19' class='group hsboss-main-container' style='top: 8.5rem;overflow-y: auto;'>
+			<div id='tag_1' class='group-v' style='margin: 0rem 0rem 1rem 0rem;width: 100%;height: 30rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_2' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_3' class='title-2' style='flex-grow: 1;'>
+						签约服务
+					</span>
+					<button id='tag_5' class='button' style='font-size: 1rem;'>
+						 帮助说明
+					</button>
+				</div>
+				<div id='tag_4' class='group-h' style='height: 3rem;flex-grow: 1;padding: 1rem 0rem;'>
+					<div id='lstServiceType' class='listview group-v' style='width: 20%;height: 100%;padding: 0rem 0rem 0rem 1rem;background-color: #FFF;'>
+						<div id='tag_6' class='group-h-m' style='height: 3rem;'>
+							<span id='tag_7' class='lable' style='width: auto;height: auto;color: inherit;'>
+								#[CODE_NAME]#
+							</span>
+						</div>
+					</div>
+					<div id='tag_8' class='group-v' style='width: 80%;height: 100%;'>
+						<div id='lstService' class='listview group-t' style='height: 100%;padding: 0rem 1rem;'>
+							<div id='tag_10' class='group-v-m' style='margin: 0rem 0rem 1rem 1rem;height: 3rem;padding: 0rem 1rem 0rem 1rem;border-style: solid;border-width: 0.1rem;border-color: #eee;border-radius: 2rem;'>
+								<span id='tag_11' class='lable' style='margin: 0.3rem;'>
+									#[ANOTHER_NAMER]#
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_12' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0rem 0rem 0.5rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_13' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='lblServiceName' class='title-2' style='color: #0074ff;'>
+						服务
+					</span>
+					<span id='tag_14' class='title-2' style='flex-grow: 1;'>
+						接单条件
+					</span>
+					<button id='btnSaveWorkerService' class='button' style='height: 2.5rem;padding: 0rem 1rem 0rem 0.5rem;border-style: solid;border-width: 0.1rem;border-color: #0074ff;border-radius: 1.5rem;font-size: 1rem;color: #0074ff;'>
+						 保存
+					</button>
+					<button id='btnDeleteWorkerService' class='button hsboss-color-gray hsboss-border-gray' style='margin: 0rem 0rem 0rem 1rem;height: 2.5rem;padding: 0rem 1rem 0rem 0.5rem;border-radius: 1.5rem;font-size: 1rem;'>
+						 删除
+					</button>
+				</div>
+				<div id='tag_15' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_16' class='lable'>
+						接单方式
+					</span>
+					<div id='lkpTakingType' class='lookup' style='flex-grow: 1;'>
+					</div>
+				</div>
+				<div id='tag_21' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_22' class='lable'>
+						最低单价
+					</span>
+					<div id='tag_25' class='group-h' style='flex-grow: 1;'>
+						<input id='numMinRate' type='number' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+						<span id='tag_27' class='lable'>
+							（元/小时）
+						</span>
+					</div>
+				</div>
+				<div id='tag_32' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_33' class='lable'>
+						最低工量
+					</span>
+					<div id='tag_36' class='group-h' style='flex-grow: 1;'>
+						<input id='numMinQuantiity' type='number' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+						<span id='tag_38' class='lable'>
+							（小时）
+						</span>
+					</div>
+				</div>
+				<div id='tag_39' class='group-h hsboss-border-bottom-gray' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_40' class='lable'>
+						最远行程
+					</span>
+					<div id='tag_43' class='group-h' style='flex-grow: 1;'>
+						<input id='numMaxDistance' type='number' class='text' style='width: 3rem;flex-grow: 1;'>
+						</input>
+						<span id='tag_45' class='lable'>
+							（公里）
+						</span>
+					</div>
+				</div>
+				<div id='tag_20' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+					<span id='tag_28' class='lable'>
+						其他条件
+					</span>
+					<textarea id='txeNote' class='textarea' style='height: 3rem;flex-grow: 1;'>
+					</textarea>
+				</div>
+			</div>
+		</div>
+		<div id='tag_25' class='group-h-m hsboss-bottom-bar'>
+			<button id='btnNext' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;font-size: 1.2rem;color: #FFF;'>
+				下一步
+			</button>
+		</div>
+	</div>
+</body>
+</html>

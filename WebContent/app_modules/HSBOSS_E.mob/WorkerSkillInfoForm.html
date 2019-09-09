@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='WorkerSkillInfoForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='WorkerSkillInfoForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group ' style='position: absolute;top: 0rem;bottom: 0rem;left: 0rem;right: 0rem;'>
+		<div id='tag_17' class='group-h-m hsboss-title-bar' style='height: 4rem;'>
+			<span id='btnBack' class='button hsboss-title-bar-left-btn'>
+				
+			</span>
+			<span id='tag_23' class='title-1 hsboss-color-white'>
+				建档立卡
+			</span>
+		</div>
+		<div id='tag_8' class=' group-h-m emui-tab-head-h' style='height: 4rem;'>
+			<span id='tabBaseInfo' class='emui-tab-h'>
+				基本信息
+			</span>
+			<span id='tabSkillInfo' class='emui-tab-selected-h'>
+				工作技能
+			</span>
+			<span id='tabServiceInfo' class='emui-tab-h'>
+				签约服务
+			</span>
+			<span id='tabMediaInfo' class='emui-tab-h'>
+				照片视频
+			</span>
+		</div>
+		<div id='tag_19' class='group hsboss-main-container' style='top: 8.5rem;overflow-y: auto;'>
+			<div id='tag_1' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;background-color: #FFF;border-radius: 0.3rem;'>
+				<div id='tag_2' class='group-h' style='height: 4rem;padding: 0rem 1rem;'>
+					<span id='tag_3' class='title-2'>
+						业务技能
+					</span>
+				</div>
+				<div id='tag_4' class='group-v' style='flex-grow: 1;padding: 0rem 1rem  1rem  1rem;'>
+					<div id='lstSkill' class='listview group-t' style='height: auto;'>
+						<div id='tag_6' class='group-v-m' style='margin: 0rem 0.5rem 0rem 0.5rem;height: 3rem;padding: 0rem 1rem 0rem 1rem;border-radius: 2rem;'>
+							<span id='tag_5' class='lable'>
+								#[CODE_NAME]#
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_7' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;background-color: #FFF;border-radius: 0.3rem;'>
+				<div id='tag_8' class='group-h' style='height: 4rem;padding: 0rem 1rem;'>
+					<span id='tag_9' class='title-2'>
+						语言技能
+					</span>
+				</div>
+				<div id='tag_10' class='group-v' style='flex-grow: 1;padding: 0rem 1rem  1rem  1rem;'>
+					<div id='lstLanguage' class='list group-t' style='height: auto;'>
+						<div id='tag_11' class='group-h-m' style='margin: 0rem 0.5rem 0rem 0.5rem;height: 3rem;padding: 0rem 1rem 0rem 1rem;border-radius: 2rem;'>
+							<span id='tag_12' class='lable'>
+								#[CODE_NAME]#
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_13' class='group-v' style='height: auto;background-color: #FFF;border-radius: 0.3rem;'>
+				<div id='tag_14' class='group-h' style='height: 4rem;padding: 0rem 1rem;'>
+					<span id='tag_15' class='title-2' style='flex-grow: 1;'>
+						资质证书
+					</span>
+					<button id='btnAddLicence' class='button' style='margin: 0rem 0rem 0rem 0.5rem;width: 4rem;height: 4rem;font-size: 2.5rem;color: #0074ff;'>
+						
+					</button>
+				</div>
+				<div id='tag_16' class='group-v' style='flex-grow: 1;padding: 0rem 1rem  1rem  1rem;'>
+					<div id='lstLicence' class='listview group-v' style='height: auto;'>
+						<div id='tag_18' class='group-h' style='height: 4rem;padding: 0.3rem;border-radius: 0.5rem;'>
+							<span id='tag_20' class='lable' style='margin: 0rem 0rem 0rem 0.5rem;'>
+								#[CERT_TYPE_TEXT]#
+							</span>
+							<div id='tag_21' class='space'>
+							</div>
+							<button id='btnDeleteLicence' class='button btnDeleteLicence' style='width: 3rem;height: 4rem;font-size: 2rem;color: #ff0000;'>
+								
+							</button>
+							<button id='btnEdit' class='button btnEditLicence' style='margin: 0rem 0rem 0rem 0.5rem;width: 2.3rem;height: 2.3rem;background-color: #0074ff;border-style: solid;border-width: 0.1rem;border-radius: 2rem;font-size: 1.2rem;color: #fff;'>
+								
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='tag_25' class='group-h-m hsboss-bottom-bar'>
+			<button id='btnNext' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;font-size: 1.2rem;color: #FFF;'>
+				下一步
+			</button>
+		</div>
+	</div>
+</body>
+</html>

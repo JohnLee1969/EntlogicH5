@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='IDEForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_html_node.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_mdi.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_draggable.js'></script>
+	<script src='IDEForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='divMain' style='position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: #BBB;'>
+		<div id='divMainBar' class='group-h' style='position: absolute; left: 0px; right: 0px; top: 0px; height: 36px; padding: 0px 4px; background-color: #BBB;'>
+			<span id='tag_0' class='group-h-m' style='margin: 0px 6px 0px 0px;width: 27px;height: 27px;background-color: #38688c;border-style: solid;border-width: 1px;border-color: #425796;border-radius: 50%;font-size: 16px;color: #FFE;'>
+				
+			</span>
+			<div id='lblMainTitle' class='eb-lable'>
+				Entlogic Builder H5应用开发环境
+			</div>
+			<div id='tag_1' class='space'>
+			</div>
+			<button id='btnModifyPassword' class='eb-link-btn'>
+				 修改密码
+			</button>
+			<button id='btnManageUser' class='eb-link-btn'>
+				 用户管理
+			</button>
+			<button id='btnDevelopProcess' class='eb-link-btn'>
+				 开发进度
+			</button>
+			<button id='btnLogin' class='eb-link-btn'>
+				 重新登录
+			</button>
+		</div>
+		<div id='divMainContent' style='position: absolute; left: 4px; right: 0px; top: 36px; bottom: 4px;'>
+			<div id='divLeft' style='position: absolute; left: 0px; width: 280px; top: 0px; bottom: 0px; background-color: #CCC;'>
+				<div id='divCatalog' style='position: absolute; left:0px; right: 0px; top: 0px; bottom: 404px; '>
+					<div id='divCatalogBar' class='group-h' style='position: absolute; left: 0px; right: 0px; top: 0px; height: 28px; padding: 0px 4px; background-color: #CCC;'>
+						<div id='lblCatalogTitle' class='eb-lable'>
+							模块
+						</div>
+						<div id='tag_2' class='space'>
+						</div>
+						<button id='btnAddModule' class='eb-link-btn'>
+							+ 模块
+						</button>
+						<button id='btnAddPage' class='eb-link-btn'>
+							+ 页面
+						</button>
+						<button id='btnRename' class='eb-link-btn'>
+							⇆ 改名
+						</button>
+						<button id='btnDelete' class='eb-link-btn'>
+							- 删除
+						</button>
+					</div>
+					<div id='divCatalogContent' style='position: absolute;top: 28px;bottom: 0px;left: 0px;right: 0px;background-color: #EEE;overflow-x: auto;overflow-y: auto;'>
+						<div id='tvwFileNode' style='width: 1000px;'>
+							<div id='tag_3' style='display:inline-block; height: 28px; padding: 2px; font-size: 12px;'>
+								<span id='tag_4' class='iconfont' style='margin: 0px 4px 0px 0px;font-size: 18px;color: #777;'>
+									#[icon]#
+								</span>
+								<span id='tag_5' class='eb-text' style='color: #555;'>
+									#[text]#  #[mark]#
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id='divStructure' style='position: absolute; left: 0px; right:0px; height: 400px; bottom: 0px;'>
+					<div id='divStructureBar' class='group-h' style='position: absolute; left: 0px; right: 0px; top: 0px; height: 28px; padding: 0px 4px; background-color: #CCC;'>
+						<select id='selStructureView' class='eb-input'>
+							<option id='tag_6' value='body'>
+								标签组件
+							</option>
+							<option id='tag_7' value='css'>
+								引用CSS
+							</option>
+							<option id='tag_8' value='js'>
+								引用JS
+							</option>
+						</select>
+						<div id='tag_9' class='space'>
+						</div>
+						<button id='btnAddCom' class='eb-link-btn'>
+							+ 添加
+						</button>
+						<button id='btnDeleteCom' class='eb-link-btn'>
+							- 删除
+						</button>
+						<button id='btnMoveUpCom' class='eb-link-btn'>
+							↑ 上移
+						</button>
+						<button id='btnMoveDownCom' class='eb-link-btn'>
+							↓ 下移
+						</button>
+					</div>
+					<div id='divStructureContent' style='position: absolute;top: 28px;bottom: 0px;left: 0px;right: 0px;background-color: #EEE;overflow-x: auto;overflow-y: auto;'>
+						<div id='tvwHtmlCssNode' style='width: auto;'>
+							<div id='tag_10' style='height: 28px;padding: 4px;font-size: 12px;'>
+								<div id='tag_11' class='eb-text' style='color: #555;'>
+									#[text]#
+								</div>
+							</div>
+						</div>
+						<div id='tvwHtmlJsNode' style='width: auto;'>
+							<div id='tag_12' style='height: 28px;padding: 4px;font-size: 12px;'>
+								<div id='tag_13' class='eb-text' style='color: #555;'>
+									#[text]#
+								</div>
+							</div>
+						</div>
+						<div id='tvwHtmlBodyNode'>
+							<span id='tag_15' class='eb-text' style='color: #555;'>
+								[#[tagName]# id='#[id]#' class='#[class]#']
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id='divLeftSplitorV' class='splitor-v' style='position: absolute; left:0px; right: 0px; height: 4px; bottom: 400px; background-color: #BBB; cursor: s-resize;'>
+				</div>
+			</div>
+			<div id='divWork' style='position: absolute; left: 284px; right: 288px; top: 0px; bottom: 0px; background-color: #FFF; '>
+				<div id='mdiFrames' style='position: absolute;top: 0px;bottom: 28px;left: 0px;right: 0px;background-color: #FFF;overflow-y: auto;font-size: 16px;'>
+				</div>
+				<div id='divWorkBar' class='group-h' style='position: absolute; left: 0px; right: 0px; bottom: 0px; height: 28px; padding: 0px 4px; background-color: #CCC;'>
+					<button id='btnDesign' class='eb-check-btn-checked'>
+						设计
+					</button>
+					<button id='btnHtml' class='eb-check-btn'>
+						HTML
+					</button>
+					<button id='btnCss' class='eb-check-btn'>
+						CSS
+					</button>
+					<button id='btnJs' class='eb-check-btn'>
+						JS
+					</button>
+					<button id='btnResource' class='eb-check-btn'>
+						资源
+					</button>
+					<button id='btnDataFile' class='eb-check-btn'>
+						数据
+					</button>
+					<button id='btnDBO' class='eb-check-btn'>
+						DBO服务
+					</button>
+					<button id='btnModule' class='eb-check-btn'>
+						质量管理
+					</button>
+					<div id='tag_16' class='space'>
+					</div>
+					<button id='btnRefresh' class='eb-link-btn'>
+						 刷新
+					</button>
+					<button id='btnExtendView' class='eb-link-btn'>
+						 展开
+					</button>
+					<button id='btnRestoreView' class='eb-link-btn'>
+						 还原
+					</button>
+					<button id='btnCheckOut' class='eb-link-btn'>
+						 检出
+					</button>
+					<button id='btnCheckIn' class='eb-link-btn'>
+						  检入
+					</button>
+					<button id='btnTest' class='eb-link-btn'>
+						 测试
+					</button>
+					<button id='btnCommit' class='eb-link-btn'>
+						 提交
+					</button>
+					<button id='btnExec' class='eb-link-btn'>
+						 调试
+					</button>
+				</div>
+			</div>
+			<div id='divRight' style='position: absolute; width: 280px; right: 4px;  top: 0px; bottom: 0px; background-color: #CCC;'>
+				<div id='divToolBox' style='position: absolute; left: 0px; right: 0px; top: 0px; bottom: 404px;'>
+					<div id='divToolBoxBar' class='group-h' style='position: absolute; left: 0px; right: 0px; top: 0px; height: 28px; padding: 0px 4px; background-color: #CCC;'>
+						<div id='lblToolBoxTitle' class='eb-lable'>
+							工具箱
+						</div>
+						<div id='tag_17' class='space'>
+						</div>
+						<button id='btnAddControl' class='eb-link-btn'>
+							+ 添加
+						</button>
+						<button id='btnInsertControlB' class='eb-link-btn'>
+							↰ 前插
+						</button>
+						<button id='btnInsertControlN' class='eb-link-btn'>
+							↲ 后插
+						</button>
+					</div>
+					<div id='divToolBoxContent' style='position: absolute; left: 0px; right: 0px; top: 28px; bottom: 0px; background-color: #EEE;'>
+						<iframe id='frameToolBox' class='eb-iframe' src='_ToolBox.html'>
+						</iframe>
+					</div>
+				</div>
+				<div id='divProperties' style='position: absolute; left: 0px; right: 0px; height: 400px; bottom: 0px;'>
+					<div id='divPropertiesBar' class='group-h' style='position: absolute;height: 28px;top: 0px;left: 0px;right: 0px;padding: 4px;background-color: #CCC;'>
+						<div id='lblPropertiesTitle' class='eb-lable'>
+							属性
+						</div>
+						<div id='tag_18' class='space'>
+						</div>
+						<button id='btnLookupFontIcon' class='eb-link-btn'>
+							 字符图标
+						</button>
+					</div>
+					<div id='divPropertiesContent' style='position: absolute; left: 0px; right: 0px; top: 28px; bottom: 0px; background-color: #EEE;'>
+						<iframe id='frameProperty' class='eb-iframe' src='_Property.html'>
+						</iframe>
+					</div>
+				</div>
+				<div id='divRightSplitorV' class='splitor-v' style='position: absolute; left:0px; right: 0px; height: 4px; bottom: 400px; background-color: #BBB; cursor: s-resize;'>
+				</div>
+			</div>
+			<div id='divLeftSplitor' class='splitor-h' style='position: absolute; left: 280px; width: 4px; top: 0px; bottom: 0px; background-color: #BBB; cursor: w-resize;'>
+			</div>
+			<div id='divRightSplitor' class='splitor-h' style='position: absolute; right: 284px; width: 4px; top: 0px; bottom: 0px; background-color: #BBB; cursor: w-resize;'>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

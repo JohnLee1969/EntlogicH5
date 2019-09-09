@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS/OrderMngForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group-v eui-form'>
+		<div id='tag_4' class='group-v eui-form-content'>
+			<div id='tag_1' class='group-h eui-panel-title-bar'>
+				<span id='tag_2' class='label eui-panel-title'>
+					订单列表
+				</span>
+				<div id='tag_3' class='space'>
+				</div>
+				<button id='tag_24' class='button eui-link-btn'>
+					 搜索
+				</button>
+				<button id='tag_21' class='button eui-link-btn'>
+					✚ 添加
+				</button>
+				<button id='tag_22' class='button eui-link-btn'>
+					✎ 修改
+				</button>
+				<button id='tag_23' class='button eui-link-btn'>
+					━ 删除
+				</button>
+			</div>
+			<div id='tag_5' class='datagrid' style='width: 100%;flex-grow: 1;'>
+				<div id='tag_6' class='datagrid-head'>
+					<div id='tag_7' class='datagrid-head-content'>
+						<div id='tag_8' class='datagrid-col'>
+							#[HCOL01]#
+						</div>
+						<div id='tag_9' class='datagrid-col'>
+							#[HCOL02]#
+						</div>
+					</div>
+				</div>
+				<div id='tag_10' class='datagrid-body'>
+					<div id='tag_11' class='datagrid-body-content'>
+						<div id='tag_12' class='datagrid-row'>
+							<div id='tag_13' class='datagrid-cell'>
+								#[RCOL01]#
+							</div>
+							<div id='tag_14' class='datagrid-cell'>
+								#[RCOL02]#
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_15' class='group-h' style='width: 100%;height: 36px;'>
+				<button id='tag_16' class='button eui-link-btn'>
+					上一页
+				</button>
+				<div id='tag_17' class='space'>
+				</div>
+				<span id='tag_18' class='lable'>
+					第1页/共1页
+				</span>
+				<div id='tag_19' class='space'>
+				</div>
+				<button id='tag_20' class='button eui-link-btn'>
+					下一页
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

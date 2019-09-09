@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='WorkerAuthenticationForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='WorkerAuthenticationForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_3' class='group' style='position: absolute;top: 0rem;bottom: 0rem;left: 0rem;right: 0rem;'>
+		<div id='tag_6' class='group-h-m hsboss-title-bar'>
+			<span id='btnBack' class='button hsboss-title-bar-left-btn' style='height: auto;font-size: 2.5rem;'>
+				
+			</span>
+			<span id='tag_22' class='title-1 hsboss-color-white' style='font-size: 1.5rem;'>
+				身份核查
+			</span>
+		</div>
+		<div id='tag_0' class='group hsboss-main-container'>
+			<div id='tag_8' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 1rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_12' class='group-t'>
+					<span id='tag_2' class='lable hsboss-color-blue' style='margin: -1rem 0rem 0rem 0rem;padding: 0rem 1rem 0rem 0rem;font-size: 5rem;'>
+						
+					</span>
+					<div id='tag_4' class='group-v' style='flex-grow: 1;'>
+						<div id='tag_5' class='group-h' style='flex-grow: 1;'>
+							<span id='tag_13' class='title-2' style='flex-grow: 1;'>
+								上传身份证头像面
+							</span>
+						</div>
+						<div id='tag_14' class='group-h'>
+						</div>
+						<span id='tag_15' class='note' style='padding: 0rem 0.5rem 1rem 0rem;'>
+							系统自动识别身份证上的信息并自动填写
+						</span>
+						<div id='tag_16' class='group-h' style='flex-grow: 1;'>
+							<div id='btnGetPhoto' class='group-h hsboss-border-blue' style='height: 2.5rem;padding: 0rem 0.8rem 0rem 0.8rem;border-radius: 0.3rem;'>
+								<span id='tag_21' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+									
+								</span>
+								<span id='tag_24' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+									相册选择
+								</span>
+							</div>
+							<div id='btnTakePhoto' class='group-h hsboss-border-blue' style='margin: 0rem 0rem 0rem 2rem;height: 2.5rem;padding: 0rem 0.8rem 0rem 0.8rem;border-style: solid;border-width: 0.1rem;border-color: #0074ff;border-radius: 0.3rem;'>
+								<span id='tag_29' class='button hsboss-color-blue' style='font-size: 1.5rem;'>
+									
+								</span>
+								<span id='tag_30' class='lable hsboss-color-blue' style='margin: 0rem 0rem 0rem 0.5rem;'>
+									拍照
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id='tag_19' class='group-h-m' style='padding: 1rem;display:none;'>
+					<image id='tag_20' class='image' style='width: 20rem;height: 12rem;'>
+					</image>
+				</div>
+			</div>
+			<div id='tag_1' class='group-v' style='margin: 0rem 0rem 1rem 0rem;height: auto;padding: 0.5rem 1rem 0.5rem 1rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_7' class='group-h-m' style='padding: 1rem;display:none;'>
+					<image id='imgCert' class='image' style='width: 20rem;height: 12rem;'>
+					</image>
+				</div>
+				<div id='tag_9' class='group-h hsboss-border-bottom-gray' style='height: 4rem;'>
+					<span id='tag_11' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<span id='tag_10' class='lable'>
+						姓名
+					</span>
+					<input id='txtName' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_26' class='group-h' style='height: 4rem;'>
+					<span id='tag_28' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<span id='tag_27' class='lable'>
+						身份证号
+					</span>
+					<input id='txtCertCode' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+			</div>
+			<div id='tag_32' class='group-v' style='margin: 0rem 0rem 1rem 0rem;padding: 0.5rem 1rem 0.5rem 1rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+				<div id='tag_35' class='group-h hsboss-border-bottom-gray' style='height: 4rem;'>
+					<span id='tag_37' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<span id='tag_36' class='lable'>
+						手机号码
+					</span>
+					<span id='tag_37' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<input id='txtMobile' type='tel' class='text' style='width: 3rem;flex-grow: 1;font-size: 1rem;' placeholder='输入手机号码'>
+					</input>
+				</div>
+				<div id='tag_41' class='group-h' style='height: 4rem;'>
+					<span id='tag_43' class='lable' style='color: #A00;'>
+						*
+					</span>
+					<span id='tag_42' class='lable'>
+						验证码
+					</span>
+					<div id='tag_45' class='group-h' style='flex-grow: 1;'>
+						<input id='txtCheckCode' type='tel' class='text' style='width: 3rem;height: 3rem;flex-grow: 1;font-size: 1rem;' placeholder='输入4位数手机验证码'>
+						</input>
+						<button id='btnGetCheckCode' class='button hsboss-color-blue' style='height: 3rem;font-size: 1rem;'>
+							获取验证码
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='tag_31' class='group-h-m hsboss-bottom-bar'>
+			<button id='btnNext' class='button hsboss-background-color-blue' style='height: 4rem;flex-grow: 1;border-radius: 2rem;font-size: 1.2rem;color: #FFF;'>
+				核查
+			</button>
+		</div>
+	</div>
+</body>
+</html>

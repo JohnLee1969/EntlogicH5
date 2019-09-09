@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS_E.mob/WorkerDetailForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_1' class='group-h hsboss-background-color-blue' style='height: 4rem;padding: 0rem 0.3rem;'>
+			<button id='btnBack' class='button hsboss-color-white' style='height: 4rem;font-size: 2.5rem;'>
+				
+			</button>
+			<div id='tag_2' class='space' style='flex-grow: 1;'>
+			</div>
+			<span id='tag_3' class='title-1 hsboss-color-white' style='margin: 0.3rem;'>
+				阿姨详情
+			</span>
+			<div id='tag_4' class='space'>
+			</div>
+			<button id='btnEdit' style='margin: 0rem 1rem 0rem 0rem;width: 2.5rem;height: 2.5rem;border-style: solid;border-width: 0.1rem;border-color: #fff;border-radius: 50%;font-size: 1.2rem;color: #fff;'>
+				
+			</button>
+		</div>
+		<div id='tag_8' class='group' style='position: absolute;top: 4rem;bottom: 0rem;left: 0rem;right: 0rem;padding: 1rem 0rem;overflow-y: auto;'>
+			<div id='tag_9' class='group-h' style='height: 27rem;padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_10' class='group-v' style='width: 100%;height: 100%;padding: 0rem 0rem 1rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+					<div id='tag_11' class='group-h' style='height: 7rem;padding: 0rem 1.5rem;'>
+						<image id='imgHeadPic' class='image' style='margin: 0rem 1rem 0rem 0rem;width: 4rem;height: 4rem;background-color: #AAA;border-radius: 50%;' src='../'>
+						</image>
+						<div id='tag_13' class='group-v-m' style='width: 8rem;height: 4rem;flex-grow: 1;'>
+							<div id='tag_14' class='group-h' style='width: 100%;height: 2.5rem;'>
+								<span id='lblName' class='title-1'>
+									张阿姨
+								</span>
+								<div id='tag_73' class='group-h'>
+									<span id='tag_86' class='hsboss-color-blue hsboss-border-blue' style='margin: 0rem 0rem 0rem 0.5rem;height: 1.5rem;padding: 0rem 0.5rem 0rem 0.5rem;border-radius: 1.5rem;font-size: 1rem;'>
+										5级金牌月嫂
+									</span>
+								</div>
+							</div>
+							<div id='tag_16' class='group-h' style='width: 100%;flex-grow: 1;'>
+								<span id='lblAge' class='note '>
+								</span>
+								<span id='tag_29' class='note' style='padding: 0rem 0.5rem 0rem 0rem;'>
+									岁
+								</span>
+							</div>
+						</div>
+						<div id='tag_17' class='group-v' style='margin: 0rem 0rem 0rem 1rem;width: 5rem;height: 4rem;background-color: #EEE;border-radius: 0.4rem 0.4rem 0rem 0.4rem;'>
+							<div id='tag_18' class='group-h-m hsboss-background-color-blue' style='width: 100%;height: 2.5rem;border-radius: 0.4rem 0.4rem 0rem 0rem;'>
+								<span id='lblTotalPoints' class='title-2 hsboss-color-white'>
+									90
+								</span>
+							</div>
+							<div id='tag_20' class='group-h-m' style='width: 100%;height: 2rem;'>
+								<span id='tag_21' class='lable note'>
+									满分100
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id='tag_25' class='group-h' style='height: 2.5rem;padding: 0rem 1.5rem 0rem 1.5rem;'>
+						<span id='tag_26' class='lable' style='width: 3rem;'>
+							国籍
+						</span>
+						<span id='lblNationality' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							中国
+						</span>
+						<span id='tag_28' class='lable' style='width: 3rem;color: #999;'>
+							地区
+						</span>
+						<span id='lblNativeArea' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							广西南宁
+						</span>
+					</div>
+					<div id='tag_30' class='group-h' style='height: 2.5rem;padding: 0rem 1.5rem 0rem 1.5rem;'>
+						<span id='tag_31' class='lable' style='width: 3rem;color: #999;'>
+							性别
+						</span>
+						<span id='lblSex' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							女
+						</span>
+						<span id='tag_33' class='lable' style='width: 3rem;color: #999;'>
+							婚姻
+						</span>
+						<span id='lblMaritalStatus' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							已婚
+						</span>
+					</div>
+					<div id='tag_35' class='group-h' style='height: 2.5rem;padding: 0rem 1.5rem 0rem 1.5rem;'>
+						<span id='tag_36' class='lable' style='width: 3rem;color: #999;'>
+							民族
+						</span>
+						<span id='lblNation' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							汉族
+						</span>
+						<span id='tag_38' class='lable' style='width: 3rem;color: #999;'>
+							星座
+						</span>
+						<span id='lblConstellation' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							双子
+						</span>
+					</div>
+					<div id='tag_40' class='group-h' style='height: 2.5rem;padding: 0rem 1.5rem 0rem 1.5rem;'>
+						<span id='tag_41' class='lable' style='width: 3rem;color: #999;'>
+							宗教
+						</span>
+						<span id='lblReligion' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							佛教
+						</span>
+						<span id='tag_43' class='lable' style='width: 3rem;color: #999;'>
+							属相
+						</span>
+						<span id='lblZodiac' class='content' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;flex-grow: 1;'>
+							鸡
+						</span>
+					</div>
+					<div id='tag_45' class='group-h' style='height: 2.5rem;padding: 0rem 1.5rem 0rem 1.5rem;'>
+						<span id='tag_46' class='lable' style='width: 3rem;color: #999;'>
+							身高
+						</span>
+						<div id='tag_19' class='group-h' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;height: 100%;flex-grow: 1;'>
+							<span id='lblHeight' class='content'>
+								170
+							</span>
+							<span id='tag_97' class='lable' style='margin: 0rem 0rem 0rem 0.2rem;color: #999;'>
+								cm
+							</span>
+						</div>
+						<span id='tag_48' class='lable' style='width: 3rem;color: #999;'>
+							体重
+						</span>
+						<div id='tag_24' class='group-h' style='margin: 0rem 0rem 0rem 0.5rem;width: 5rem;height: 100%;flex-grow: 1;'>
+							<span id='lblWeight' class='content'>
+								50
+							</span>
+							<span id='tag_100' class='lable' style='margin: 0rem 0rem 0rem 0.2rem;color: #999;'>
+								kg
+							</span>
+						</div>
+					</div>
+					<div id='tag_50' class='group-h-m' style='flex-grow: 1;background-color: #FFF;'>
+						<div id='tag_51' class='group-v-m' style='height: 100%;flex-grow: 1;justify-content:flex-start;'>
+							<span id='iconIdCardStatus'>
+							</span>
+							<span id='tag_53' class='lable' style='margin: 0rem 0rem 0rem 0rem;'>
+								身份验证
+							</span>
+							<span id='lblIdCardStatus' class='content' style='font-size: 1rem;'>
+							</span>
+						</div>
+						<div id='tag_54' class='group-v-m' style='height: 100%;flex-grow: 1;justify-content:flex-start;'>
+							<span id='iconDishonestyStatus'>
+							</span>
+							<span id='tag_56' class='lable' style='margin: 0rem 0rem 0rem 0rem;'>
+								失信验证
+							</span>
+							<span id='lblDishonestyStatus' class='content' style='font-size: 1rem;'>
+							</span>
+						</div>
+						<div id='tag_57' class='group-v-m' style='height: 100%;flex-grow: 1;justify-content:flex-start;'>
+							<span id='iconPhoneStatus'>
+							</span>
+							<span id='tag_59' class='lable' style='margin: 0rem 0rem 0rem 0rem;'>
+								手机验证
+							</span>
+							<span id='lblPhoneStatus' class='content' style='font-size: 1rem;'>
+							</span>
+						</div>
+						<div id='tag_60' class='group-v-m' style='height: 100%;flex-grow: 1;justify-content:flex-start;'>
+							<span id='iconHealthStatus'>
+							</span>
+							<span id='tag_62' class='lable' style='margin: 0rem 0rem 0rem 0rem;'>
+								健康验证
+							</span>
+							<span id='lblHealthStatus' class='content' style='font-size: 1rem;'>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_63' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_64' class='group-v' style='flex-grow: 1;background-color: #FFFFFF;border-radius: 0.3rem;'>
+					<div id='tag_79' class='group-h-m' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+						<span id='tag_81' class='title-2' style='flex-grow: 1;'>
+							荣誉徽章
+						</span>
+						<button id='btnMedalExplain' class='button note' style='font-size: 1rem;'>
+							 勋章说明
+						</button>
+					</div>
+					<div id='lstMedal' class='listview group-t' style='flex-grow: 2;padding: 0rem 1rem 2rem 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+						<div id='tag_49' class='group-v-m' style='margin: 0rem 0rem;width: 15rem;height: 15rem;'>
+							<image id='tag_104' class='image' style='margin: 0rem 0rem 0rem 0rem;width: 15rem;height: 15rem;' src='../..#[MEDAL_ICON_PATH]#'>
+							</image>
+							<span id='tag_106' class='lable' style='margin: -5rem 0rem 0rem 0rem;font-size: 1rem;color: #FFF;'>
+								#[MEDAL_TYPE_TEXT]##[SERVICE_TYPE_TEXT]#
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='divLanguage' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_22' class='group-v' style='flex-grow: 1;padding: 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+					<div id='tag_27' class='group-h' style='padding: 0rem 1rem 0.5rem 0rem;'>
+						<span id='tag_32' class='title-2' style='flex-grow: 1;'>
+							语言能力
+						</span>
+					</div>
+					<div id='tag_47' class='group-h'>
+						<span id='lblLanguage' class='lable' style='flex-grow: 1;'>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id='tag_12' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_15' class='group-v' style='flex-grow: 1;padding: 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+					<div id='tag_65' class='group-h' style='padding: 0rem 0rem 0.5rem 0rem;'>
+						<span id='tag_98' class='title-2' style='flex-grow: 1;'>
+							工作技能
+						</span>
+					</div>
+					<div id='tag_101' class='group-h'>
+						<span id='lblSkill' class='lable' style='flex-grow: 1;'>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id='divLicence' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_37' class='group-v' style='width: 100%;background-color: #FFFFFF;border-radius: 0.3rem;'>
+					<div id='tag_39' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+						<span id='tag_42' class='title-2'>
+							资质证书
+						</span>
+					</div>
+					<div id='lstLicence' class='group-h-m list' style='padding: 0rem 1rem 0.5rem 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+						<div id='tag_68' class='group-v-m' style='margin: 0rem 0.2rem 1rem 0.2rem;width: 14rem;height: 14rem;flex-grow: 1;'>
+							<image id='tag_69' class='image' style='width: 100%;flex-grow: 1;background-color: #A9A9A9;border-radius: 0.3rem;' src='../..#[IMAGE_ICON]#'>
+							</image>
+							<span id='tag_70' class='lable' style='margin: 0.4rem 0rem 0rem 0rem;'>
+								#[CERT_TYPE_TEXT]#
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='divPic' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_67' class='group-v' style='width: 100%;background-color: #FFFFFF;border-radius: 0.3rem;'>
+					<div id='tag_71' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+						<span id='tag_72' class='title-2'>
+							照片
+						</span>
+					</div>
+					<div id='lstPic' class='listview group-t' style='padding: 0rem 1rem 0.5rem 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+						<div id='tag_74' class='group-v-m' style='width: 14rem;height: 14rem;flex-grow: 1;padding: 0rem 0.2rem 1rem 0.2rem;'>
+							<image id='tag_75' class='image' style='width: 100%;height: 100%;border-radius: 0.3rem;' src='../..#[FILE_PATH]#'>
+							</image>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='divVideo' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_77' class='group-v' style='width: 100%;background-color: #FFFFFF;border-radius: 0.3rem;'>
+					<div id='tag_78' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+						<span id='tag_80' class='title-2'>
+							视频
+						</span>
+					</div>
+					<div id='lstVideo' class='group-h-m list' style='padding: 0rem 1rem 1rem 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+						<div id='tag_83' class='group-v-m' style='width: 12rem;height: 12rem;flex-grow: 1;'>
+							<video id='tag_84' class='video-box' style='width: 100%;height: 100%;border-radius: 0.3rem;' src='../../app_data/HSBOSS/AFS/2019/0724/0119/test.mp4'>
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_23' class='group-h' style='padding: 0rem 1rem 1rem 1rem;'>
+				<div id='tag_34' class='group-v' style='width: 100%;padding: 0rem 0rem 1rem 0rem;background-color: #FFFFFF;border-radius: 0.3rem;'>
+					<div id='tag_44' class='group-h' style='height: 4rem;padding: 0rem 1rem 0rem 1rem;'>
+						<span id='tag_66' class='title-2' style='flex-grow: 1;'>
+							雇主评分
+						</span>
+						<span id='tag_89' class='lable'>
+							共
+						</span>
+						<span id='tag_90' class='lable hsboss-color-green' style='color: #0074ff;'>
+							322
+						</span>
+						<span id='tag_91' class='lable'>
+							人评分
+						</span>
+					</div>
+					<div id='tag_87' class='group-h' style='height: 6rem;padding: 0rem 1.5rem;'>
+						<image id='tag_88' class='image' style='margin: 0rem 1rem 0rem 0rem;width: 4rem;height: 4rem;background-color: #AAA;border-radius: 50%;' src='../../app_resources/HSBOSS_E.mob/images/head.jpg'>
+						</image>
+						<div id='tag_92' class='group-v-m' style='width: 8rem;height: 4rem;flex-grow: 1;'>
+							<div id='tag_93' class='group-h' style='width: 100%;height: 2.5rem;'>
+								<span id='tag_94' class='title-3'>
+									张先生
+								</span>
+								<div id='tag_6' class='space'>
+								</div>
+							</div>
+							<div id='tag_99' class='group-h' style='width: 100%;flex-grow: 1;'>
+								<span id='tag_102' class='note'>
+									2019-5-21 12:11
+								</span>
+							</div>
+						</div>
+						<div id='tag_103' class='group-h' style='margin: 0rem 0rem 0rem 1rem;padding: 0rem 1rem 0rem 1rem;'>
+							<span id='tag_76' class='lable hsboss-color-green' style='font-size: 1.5rem;color: #ff0000;'>
+								
+							</span>
+							<span id='tag_95' class='note hsboss-color-green' style='color: #ff0000;'>
+								+1
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

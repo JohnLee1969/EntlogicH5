@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/entlogicBuilder/_Property.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='divBaseBar' class='group-h' style='height: 26px;padding: 4px;background-color: #DDD;'>
+		<button id='btnBaseProperties' class='eb-link-btn'>
+			▼
+		</button>
+		<span id='tag_0'>
+			基本
+		</span>
+	</div>
+	<div id='grpBaseProperties' class='property-group'>
+		<div id='tag_1' class='property-row'>
+			<div id='tag_2' class='property-name'>
+				<span id='tag_3'>
+					tagName:
+				</span>
+			</div>
+			<input id='txtTagName' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_4' class='property-row'>
+			<div id='tag_5' class='property-name'>
+				<span id='tag_6'>
+					id:
+				</span>
+			</div>
+			<input id='txtId' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_7' class='property-row'>
+			<div id='tag_8' class='property-name'>
+				<span id='tag_9'>
+					class:
+				</span>
+			</div>
+			<input id='txtClass' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_10' class='property-row'>
+			<div id='tag_11' class='property-name'>
+				<span id='tag_12'>
+					content:
+				</span>
+			</div>
+			<input id='txtContent' type='text' class='property-value iconfont'>
+			</input>
+		</div>
+		<div id='grpResourceProperties' class='property-row'>
+			<div id='tag_13' class='property-name'>
+				<span id='tag_14'>
+					src:
+				</span>
+			</div>
+			<input id='txtSrc' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='grpInputProperties'>
+			<div id='tag_15' class='property-row'>
+				<div id='tag_16' class='property-name'>
+					<span id='tag_17'>
+						type:
+					</span>
+				</div>
+				<input id='txtType' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_18' class='property-row'>
+				<div id='tag_19' class='property-name'>
+					<span id='tag_20'>
+						value:
+					</span>
+				</div>
+				<input id='txtValue' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_21' class='property-row'>
+				<div id='tag_22' class='property-name'>
+					<span id='tag_23'>
+						title:
+					</span>
+				</div>
+				<input id='txtTitle' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_24' class='property-row'>
+				<div id='tag_25' class='property-name'>
+					<span id='tag_26'>
+						pattem:
+					</span>
+				</div>
+				<input id='txtPattem' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_27' class='property-row'>
+				<div id='tag_28' class='property-name'>
+					<span id='tag_29'>
+						placeholder:
+					</span>
+				</div>
+				<input id='txtPlaceholder' type='text' class='property-value'>
+				</input>
+			</div>
+		</div>
+	</div>
+	<div id='divItemBar' class='group-h' style='height: 26px;padding: 4px;background-color: #DDD;'>
+		<button id='btnItemProperties' class='eb-link-btn'>
+			▼
+		</button>
+		<span id='tag_30'>
+			元素
+		</span>
+	</div>
+	<div id='grpItemProperties' class='property-group'>
+		<div id='tag_31' class='property-row'>
+			<div id='tag_32' class='property-name'>
+				<span id='tag_33'>
+					position:
+				</span>
+			</div>
+			<select id='selPosition' class='property-value'>
+				<option id='tag_34'>
+				</option>
+				<option id='tag_35' value='absolute'>
+					absolute
+				</option>
+				<option id='tag_36' value='relative'>
+					relative
+				</option>
+			</select>
+		</div>
+		<div id='tag_37' class='property-row'>
+			<div id='tag_38' class='property-name'>
+				margin:
+			</div>
+			<input id='txtMargin' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_39' class='property-row'>
+			<div id='tag_40' class='property-name'>
+				<span id='tag_41'>
+					width:
+				</span>
+			</div>
+			<input id='txtWidth' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_42' class='property-row'>
+			<div id='tag_43' class='property-name'>
+				<span id='tag_44'>
+					height:
+				</span>
+			</div>
+			<input id='txtHeight' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_45' class='property-row'>
+			<div id='tag_46' class='property-name'>
+				<span id='tag_47'>
+					flex-grow:
+				</span>
+			</div>
+			<input id='txtFlexGrow' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='grpAbsoluteProperties'>
+			<div id='tag_48' class='property-row'>
+				<div id='tag_49' class='property-name'>
+					<span id='tag_50'>
+						top:
+					</span>
+				</div>
+				<input id='txtTop' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_51' class='property-row'>
+				<div id='tag_52' class='property-name'>
+					<span id='tag_53'>
+						bottom:
+					</span>
+				</div>
+				<input id='txtBottom' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_54' class='property-row'>
+				<div id='tag_55' class='property-name'>
+					<span id='tag_56'>
+						left:
+					</span>
+				</div>
+				<input id='txtLeft' type='text' class='property-value'>
+				</input>
+			</div>
+			<div id='tag_57' class='property-row'>
+				<div id='tag_58' class='property-name'>
+					<span id='tag_59'>
+						right:
+					</span>
+				</div>
+				<input id='txtRight' type='text' class='property-value'>
+				</input>
+			</div>
+		</div>
+	</div>
+	<div id='divContainerBar' class='group-h' style='height: 26px;padding: 4px;background-color: #DDD;'>
+		<button id='btnContainerProperties' class='eb-link-btn'>
+			▼
+		</button>
+		<span id='tag_60'>
+			容器
+		</span>
+	</div>
+	<div id='grpContainerProperties' class='property-group'>
+		<div id='tag_61' class='property-row'>
+			<div id='tag_62' class='property-name'>
+				<span id='tag_63'>
+					padding:
+				</span>
+			</div>
+			<input id='txtPadding' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_64' class='property-row'>
+			<div id='tag_65' class='property-name'>
+				<span id='tag_66'>
+					background-color:
+				</span>
+			</div>
+			<input id='txtBackgroundColor' type='text' class='property-value'>
+			</input>
+			<button id='btnPickBackgroundColor' class='property-btn'>
+				...
+			</button>
+		</div>
+		<div id='tag_67' class='property-row'>
+			<div id='tag_68' class='property-name'>
+				<span id='tag_69'>
+					background-image:
+				</span>
+			</div>
+			<input id='txtBackgroundImage' type='text' class='property-value'>
+			</input>
+			<button id='btnPickBackgroundImage' class='property-btn'>
+				...
+			</button>
+		</div>
+		<div id='tag_70' class='property-row'>
+			<div id='tag_71' class='property-name'>
+				<span id='tag_72'>
+					border-style:
+				</span>
+			</div>
+			<select id='selBorderStyle' class='property-value'>
+				<option id='tag_73'>
+				</option>
+				<option id='tag_74' value='none'>
+					none
+				</option>
+				<option id='tag_75' value='solid'>
+					solid
+				</option>
+				<option id='tag_76' value='dashed'>
+					dashed
+				</option>
+				<option id='tag_77' value='dotted'>
+					dotted
+				</option>
+				<option id='tag_78' value='double'>
+					double
+				</option>
+				<option id='tag_79' value='groove'>
+					groove
+				</option>
+				<option id='tag_80' value='ridge '>
+					ridge
+				</option>
+				<option id='tag_81' value='inset '>
+					inset
+				</option>
+				<option id='tag_82' value='outset '>
+					outset
+				</option>
+			</select>
+		</div>
+		<div id='tag_83' class='property-row'>
+			<div id='tag_84' class='property-name'>
+				<span id='tag_85'>
+					border-width:
+				</span>
+			</div>
+			<input id='txtBorderWidth' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_86' class='property-row'>
+			<div id='tag_87' class='property-name'>
+				<span id='tag_88'>
+					border-color:
+				</span>
+			</div>
+			<input id='txtBorderColor' type='text' class='property-value'>
+			</input>
+			<button id='btnPickBorderColor' class='property-btn'>
+				...
+			</button>
+		</div>
+		<div id='tag_89' class='property-row'>
+			<div id='tag_90' class='property-name'>
+				<span id='tag_91'>
+					border-radius:
+				</span>
+			</div>
+			<input id='txtBorderRadius' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_92' class='property-row'>
+			<div id='tag_93' class='property-name'>
+				<span id='tag_94'>
+					overflow-x:
+				</span>
+			</div>
+			<select id='selOverflowX' class='property-value'>
+				<option id='tag_95'>
+				</option>
+				<option id='tag_96' value='auto'>
+					auto
+				</option>
+				<option id='tag_97' value='scroll'>
+					scroll
+				</option>
+			</select>
+		</div>
+		<div id='tag_98' class='property-row'>
+			<div id='tag_99' class='property-name'>
+				<span id='tag_100'>
+					overflow-y:
+				</span>
+			</div>
+			<select id='selOverflowY' class='property-value'>
+				<option id='tag_101'>
+				</option>
+				<option id='tag_102' value='auto'>
+					auto
+				</option>
+				<option id='tag_103' value='scroll'>
+					scroll
+				</option>
+			</select>
+		</div>
+	</div>
+	<div id='divFontBar' class='group-h' style='height: 26px;padding: 4px;background-color: #DDD;'>
+		<button id='btnFontProperties' class='eb-link-btn'>
+			▼
+		</button>
+		<span id='tag_104'>
+			字体
+		</span>
+	</div>
+	<div id='grpFontProperties' class='property-group'>
+		<div id='tag_105' class='property-row'>
+			<div id='tag_106' class='property-name'>
+				<span id='tag_107'>
+					font-family:
+				</span>
+			</div>
+			<input id='txtFontFamily' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_108' class='property-row'>
+			<div id='tag_109' class='property-name'>
+				<span id='tag_110'>
+					font-size:
+				</span>
+			</div>
+			<input id='txtFontSize' type='text' class='property-value'>
+			</input>
+		</div>
+		<div id='tag_111' class='property-row'>
+			<div id='tag_112' class='property-name'>
+				<span id='tag_113'>
+					font-color:
+				</span>
+			</div>
+			<input id='txtFontColor' type='text' class='property-value'>
+			</input>
+			<button id='btnPickFontColor' class='property-btn'>
+				...
+			</button>
+		</div>
+		<div id='tag_114' class='property-row'>
+			<div id='tag_115' class='property-name'>
+				<span id='tag_116'>
+					font-style:
+				</span>
+			</div>
+			<select id='selFontStyle' class='property-value'>
+				<option id='tag_117'>
+				</option>
+				<option id='tag_118' value='ormal'>
+					normal
+				</option>
+				<option id='tag_119' value='italic'>
+					italic
+				</option>
+				<option id='tag_120' value='oblique'>
+					oblique
+				</option>
+			</select>
+		</div>
+		<div id='tag_121' class='property-row'>
+			<div id='tag_122' class='property-name'>
+				<span id='tag_123'>
+					font-weight:
+				</span>
+			</div>
+			<select id='selFontWeight' class='property-value'>
+				<option id='tag_124'>
+				</option>
+				<option id='tag_125' value='ormal'>
+					normal
+				</option>
+				<option id='tag_126' value='bold'>
+					bold
+				</option>
+			</select>
+		</div>
+	</div>
+	<div id='divOthersBar' class='group-h' style='height: 26px;padding: 4px;background-color: #DDD;'>
+		<button id='btnOthersProperties' class='eb-link-btn'>
+			▼
+		</button>
+		<span id='tag_127'>
+			其他
+		</span>
+	</div>
+	<div id='grpOthersProperties' class='property-group'>
+		<textarea id='txtOthers' class='property-value' style='width: 100%; height: 200px;'>
+		</textarea>
+	</div>
+</body>
+</html>

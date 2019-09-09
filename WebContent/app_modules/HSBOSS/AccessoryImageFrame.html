@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='AccessoryImageFrame.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='AccessoryImageFrame.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_2' class='group' style='position: absolute;height: 36px;top: 0px;left: 0px;right: 0px;'>
+			<div id='tag_4' class='group-h eui-panel-title-bar'>
+				<span id='lblDocTitle' class='label eui-panel-title'>
+					影像附件
+				</span>
+				<div id='tag_8' class='space'>
+				</div>
+				<button id='btnFixWidth' class='button eui-link-btn'>
+					⇆ 页宽
+				</button>
+				<button id='btnFixHeight' class='button eui-link-btn'>
+					⇅ 页高
+				</button>
+				<button id='btnZoomDown' class='button eui-link-btn'>
+					- 缩小
+				</button>
+				<button id='btnZoomUp' class='button eui-link-btn'>
+					+ 放大
+				</button>
+				<button id='btnRestore' class='button eui-link-btn'>
+					↻ 还原
+				</button>
+				<div id='tag_19' class='space' style='width: 20px;flex-grow: 0;'>
+				</div>
+				<button id='btnImportFile' class='button eui-link-btn'>
+					 文件添加
+				</button>
+				<button id='btnTakePhoto' class='button eui-link-btn'>
+					 拍照添加
+				</button>
+				<button id='btnDelete' class='button eui-link-btn'>
+					 删除
+				</button>
+				<button id='btnMoveUUp' class='button eui-link-btn'>
+					▲ 上移
+				</button>
+				<button id='btnMoveDown' class='button eui-link-btn'>
+					▼ 下移
+				</button>
+			</div>
+		</div>
+		<div id='divPageView' class='group-v' style='position: absolute;top: 36px;bottom: 0px;left: 0px;right: 160px;padding: 6px;background-color: #AAA;overflow-x: auto;overflow-y: auto;'>
+			<div id='divPage' class='group-v' style='margin: auto;width: auto;height: auto;'>
+				<image id='imgAccessory' class='image' style='width: 440px;height: 330px;background-color: #FFF;'>
+				</image>
+			</div>
+		</div>
+		<div id='tag_1' class='group' style='position: absolute;width: 160px;top: 36px;bottom: 0px;right: 0px;'>
+			<div id='lstPreview' class='list' style='background-color: #EAEAEA;'>
+				<div id='tag_5' class='group-v' style='width: 100%;height: auto;padding: 6px;'>
+					<div id='tag_6' class='group-h' style='width: 100%;height: auto;'>
+						<div id='tag_12' class='space'>
+						</div>
+						<image id='tag_13' class='image' style='width: 72px;height: auto;' src='../..#[FILE_PATH]#'>
+						</image>
+						<div id='tag_14' class='space'>
+						</div>
+					</div>
+					<div id='tag_7' class='group-h' style='width: 100%;height: 22px;'>
+						<div id='tag_9' class='space'>
+						</div>
+						<span id='tag_10' class='lable'>
+							#[rn]#
+						</span>
+						<div id='tag_11' class='space'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

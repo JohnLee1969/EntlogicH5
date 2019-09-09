@@ -1,0 +1,18 @@
+/* 创建项目的iconfont，采用阿里的iconfont图标库
+@font-face {
+  font-family: 'iconfont-XXX';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../plugins/font/iconfont.woff2') format('woff2'),
+      url('../plugins/font/iconfont.woff') format('woff'),
+      url('../plugins/font/iconfont.ttf') format('truetype'),
+      url('../plugins/font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont-XXX" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/

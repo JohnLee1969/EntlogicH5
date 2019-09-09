@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/entlogicSystem/UserEditDialog.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='divScreen' class='group-v' style='width: 720px;height: 560px;padding: 12px;'>
+		<div id='tag_1' class='group-h' style='width: 100%;flex-grow: 1;'>
+			<div id='tag_4' class='group-v' style='height: 100%;flex-grow: 1;'>
+				<div id='tag_9' class='group-h' style='height: 36px;'>
+					<span id='tag_10' class='lable'>
+						登录账号
+					</span>
+					<input id='txtUserName' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_12' class='group-h' style='height: 36px;'>
+					<span id='tag_13' class='lable'>
+						登录口令
+					</span>
+					<input id='txtPassword' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_6' class='group-h' style='height: 36px;'>
+					<span id='tag_7' class='lable'>
+						用户编码
+					</span>
+					<input id='txtUserCode' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_15' class='group-h' style='height: 36px;'>
+					<span id='tag_16' class='lable'>
+						真实姓名
+					</span>
+					<input id='txtRealName' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_18' class='group-h' style='height: 36px;'>
+					<span id='tag_19' class='lable'>
+						用户性别
+					</span>
+					<select id='selSex' class='select' style='flex-grow: 1;'>
+						<option id='tag_21' value='1'>
+							男
+						</option>
+						<option id='tag_22' value='0'>
+							女
+						</option>
+					</select>
+				</div>
+				<div id='tag_24' class='group-h' style='height: 36px;'>
+					<span id='tag_25' class='lable'>
+						固定电话
+					</span>
+					<input id='txtTel' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_27' class='group-h' style='height: 36px;'>
+					<span id='tag_28' class='lable'>
+						移动电话
+					</span>
+					<input id='txtMob' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_30' class='group-h' style='height: 36px;'>
+					<span id='tag_31' class='lable'>
+						电子邮箱
+					</span>
+					<input id='txtEMail' type='text' class='text' style='flex-grow: 1;'>
+					</input>
+				</div>
+				<div id='tag_33' class='group-h' style='height: 36px;'>
+					<span id='tag_34' class='lable'>
+						用户状态
+					</span>
+					<select id='selIsActive' class='select' style='flex-grow: 1;'>
+						<option id='tag_36' value='1'>
+							有效
+						</option>
+						<option id='tag_37' value='0'>
+							失效
+						</option>
+					</select>
+				</div>
+				<div id='tag_39' class='group-h' style='height: 36px;'>
+					<span id='tag_40' class='lable'>
+						角色授权
+					</span>
+				</div>
+				<div id='tag_43' class='group' style='width: 100%;flex-grow: 1;background-color: #F8F8F8;'>
+					<div id='lstUserAuth' class='list'>
+						#[ROLE_NAME]#
+					</div>
+				</div>
+			</div>
+			<div id='tag_44' class='group-v' style='width: 12px;height: 100px;'>
+			</div>
+			<div id='tag_5' class='group-v' style='width: 360px;height: 100%;'>
+				<image id='imgUserPic' class='image' style='margin: 0px;width: 100%;height: 100%;'>
+				</image>
+			</div>
+		</div>
+		<div id='tag_3' class='group-h' style='width: 100px;height: 8px;'>
+		</div>
+		<div id='tag_2' class='group-h' style='width: 100%;height: 28px;'>
+			<input id='filePic' type='file' class='file'>
+			</input>
+			<div id='tag_46' class='space'>
+			</div>
+			<button id='btnTakePic' class='button eui-btn' style='margin: 0px;width: 80px;'>
+				拍摄照片
+			</button>
+			<button id='btnUploadPic' class='button eui-btn' style='margin: 0px 0px 0px 2px;width: 80px;'>
+				上传照片
+			</button>
+			<button id='btnSave' class='button eui-btn' style='margin: 0px 0px 0px 2px;width: 60px;'>
+				保存
+			</button>
+		</div>
+	</div>
+</body>
+</html>

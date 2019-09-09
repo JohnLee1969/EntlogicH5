@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='ParameterMngForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='ParameterMngForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group-v eui-form'>
+		<div id='tag_5' class='group-h eui-form-content'>
+			<div id='tag_6' class='group-v eui-panel' style='width: 100px;height: 100%;flex-grow: 1;'>
+				<div id='tag_7' class='group-h eui-panel-title-bar'>
+					<span id='tag_8' class='label eui-panel-title'>
+						参数列表
+					</span>
+					<div id='tag_9' class='space'>
+					</div>
+				</div>
+				<div id='tag_10' class='group-v eui-panel-content'>
+					<div id='dgrParameter' class='datagrid ' style='width: 100%;flex-grow: 1;'>
+						<div id='tag_11' class='datagrid-head'>
+							<div id='tag_12' class='datagrid-head-content' style='width: 100%;'>
+								<div id='tag_13' class='datagrid-col'>
+									参数分组
+								</div>
+								<div id='tag_14' class='datagrid-col' style='width: 200px;'>
+									参数名称
+								</div>
+								<div id='tag_15' class='datagrid-col' style='flex-grow: 1;'>
+									参数取值
+								</div>
+							</div>
+						</div>
+						<div id='tag_16' class='datagrid-body'>
+							<div id='tag_17' class='datagrid-body-content' style='width: 100%;'>
+								<div id='tag_18' class='datagrid-row'>
+									<div id='tag_19' class='datagrid-cell'>
+										#[PARAM_GROUP]#
+									</div>
+									<div id='tag_20' class='datagrid-cell' style='width: 200px;'>
+										#[PARAM_KEY]#
+									</div>
+									<div id='tag_21' class='datagrid-cell' style='flex-grow: 1;'>
+										#[PARAM_VALUE]#
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_22' class='group-v' style='width: 12px;height: 100%;'>
+			</div>
+			<div id='tag_23' class='group-v eui-panel' style='width: 360px;height: 100%;'>
+				<div id='tag_24' class='group-h eui-panel-title-bar'>
+					<span id='tag_25' class='label eui-panel-title'>
+						参数配置
+					</span>
+				</div>
+				<div id='tag_26' class='group-v eui-panel-content' style='flex-grow: 1;padding: 12px;'>
+					<div id='tag_27' class='group-h' style='height: 36px;'>
+						<span id='tag_28' class='lable'>
+							参数编码
+						</span>
+						<input id='txtOrderCode' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_29' class='group-h' style='height: 36px;'>
+						<span id='tag_30' class='lable'>
+							参数分组
+						</span>
+						<input id='txtParamGroup' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_31' class='group-h' style='height: 36px;'>
+						<span id='tag_32' class='lable'>
+							参数名称
+						</span>
+						<input id='txtParamKey' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_33' class='group-h' style='height: 36px;'>
+						<span id='tag_34' class='lable'>
+							参数取值
+						</span>
+						<input id='txtParamValue' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_35' class='space'>
+					</div>
+					<div id='tag_36' class='group-h' style='height: 28px;'>
+						<div id='tag_37' class='space'>
+						</div>
+						<button id='btnSave' class='button eui-btn' style='width: 60px;'>
+							保存
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

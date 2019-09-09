@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/entlogicBuilder/_DBO.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_draggable.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='divLeft' style='position: absolute; left: 0px; width: 280px; top: 0px; bottom: 0px;'>
+		<div id='tag_0' class='group-h' style='position: absolute;height: 28px;top: 0px;left: 0px;right: 0px;padding: 4px;background-color: #CCC;'>
+			<div id='tag_1' class='eb-lable'>
+				数据库服务目录
+			</div>
+			<div id='tag_17' class='space'>
+			</div>
+			<button id='btnAdd' class='eb-link-btn' style='float: right;'>
+				+ 添加
+			</button>
+			<button id='btnDelete' class='eb-link-btn' style='float: right;'>
+				- 删除
+			</button>
+		</div>
+		<div id='divCatalogContent' style='position: absolute;top: 28px;bottom: 0px;left: 0px;right: 0px;background-color: #EEE;overflow-x: auto;overflow-y: auto;'>
+			<div id='tvwDBOCatalog' style='width:3000px;'>
+				<div id='tag_2' style='display:inline-block; height: 28px; padding: 6px; font-size: 12px;'>
+					<span id='tag_3' style='color: #555'>
+						#[text]#
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='divWork' style='position: absolute; left: 284px; right: 0px; top: 0px; bottom: 0px;'>
+		<div id='tag_4' class='group-h' style='position: absolute;height: 28px;top: 0px;left: 0px;right: 0px;padding: 4px;background-color: #CCC;'>
+			<div id='tag_5' class='eb-lable'>
+				数据库服务配置
+			</div>
+			<div id='tag_18' class='space'>
+			</div>
+			<button id='btnSave' class='eb-link-btn'>
+				 保存
+			</button>
+		</div>
+		<div id='tag_6' class='group-v' style='position: absolute;top: 28px;bottom: 0px;left: 0px;right: 0px;padding: 6px 12px 12px 12px;background-color: #EEE;'>
+			<div id='tag_7' class='group-h' style='height: 36px;'>
+				名称
+			</div>
+			<div id='tag_8' class='group-h'>
+				<input id='txtName' type='text' class='text' style='flex-grow: 1;' value='#[NAME]#'>
+				</input>
+			</div>
+			<div id='tag_9' class='group-h' style='height: 36px;'>
+				数据源ID
+			</div>
+			<div id='tag_10' class='group-h'>
+				<input id='txtDsn' type='text' class='text' style='flex-grow: 1;' value='#[DSN]#'>
+				</input>
+			</div>
+			<div id='tag_11' class='group-h' style='height: 36px;'>
+				SQL通用模板
+			</div>
+			<div id='tag_12' class='property-row' style='flex-grow: 1'>
+				<textarea id='txtSql' class='textarea' style='height: 100%;flex-grow: 1;'>
+					#[SQL]#
+				</textarea>
+			</div>
+			<div id='tag_13' class='group-h' style='height: 36px;'>
+				SQL_MSSQL模板
+			</div>
+			<div id='tag_14' class='property-row' style='flex-grow: 1'>
+				<textarea id='txtSqlMssql' class='textarea' style='height: 100%;flex-grow: 1;'>
+					#[SQL_MSSQL]#
+				</textarea>
+			</div>
+			<div id='tag_15' class='group-h' style='height: 36px;'>
+				SQL_ORACLE模板
+			</div>
+			<div id='tag_16' class='property-row' style='flex-grow: 1'>
+				<textarea id='txtSqlOracle' class='textarea' style='height: 100%;flex-grow: 1;'>
+					#[SQL_ORACLE]#
+				</textarea>
+			</div>
+		</div>
+	</div>
+	<div id='divLeftSplitor' class='splitor-h' style='position: absolute; left: 280px; width: 4px; top: 0px; bottom: 0px; background-color: #BBB; cursor: w-resize;'>
+	</div>
+</body>
+</html>

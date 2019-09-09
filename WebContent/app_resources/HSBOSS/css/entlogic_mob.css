@@ -1,0 +1,492 @@
+/**************************************************\
+	H5 手机屏幕自适应参数设置                           
+\**************************************************/
+@media (min-width: 90px){html{ font-size:2.5px;}}
+@media (min-width: 180px){html{ font-size:5px;}}
+@media (min-width: 240px){html{ font-size:6.66px;}}
+@media (min-width: 270px){html{ font-size:7.5px;}}
+@media (min-width: 320px){html{ font-size:8.8px;}}
+@media (min-width: 360px){html{ font-size:10px;}}
+@media (min-width: 393px){html{ font-size:11px;}}
+@media (min-width: 480px){html{ font-size:13.33px;}}
+@media (min-width: 540px){html{ font-size:15px;}}
+@media (min-width: 720px){html{ font-size:20px;}}
+@media (min-width: 900px){html{ font-size:25px;}}
+@media (min-width: 1080px){html{ font-size:30px;}}
+
+/**************************************************\
+	页面框架布局                     
+\**************************************************/
+iframe {
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	z-index: 10;	
+}
+
+body {
+ 	font-family: "iconfont" !important;	
+ 	background-color: #EEE;
+ 	color: #888;
+ 	font-size: 14px;
+	border: none;
+}
+
+.group {
+	z-index: 10;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.group-h {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.group-h-m {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+/*各行之前、之间、之后都留有空白的容器内*/
+.group-h-m-s {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+
+.group-h-r {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-end;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-end; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.group-v {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.group-v-m {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.group-t {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;	
+	align-content: flex-start;
+	justify-content: flex-start;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.group-t-m {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;	
+	align-content: center;
+	justify-content: center;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.space {
+	z-index: 10;
+	width: 1rem;
+	height: 1rem;
+	flex-grow: 1;
+}
+
+/**************************************************\
+	文本内容                     
+\**************************************************/
+
+/*	标签 */
+.lable {
+	z-index: 10;
+	width: auto;
+	height: 1.4rem;
+	font-family: "iconfont" !important;
+	font-size: 1rem;
+	color: #AAA;
+}
+
+/* 正文 */
+.content {
+	z-index: 10;
+	width: auto;
+	height: 1.5rem;
+	font-family: "iconfont" !important;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+/* 备注 */
+.note {
+	z-index: 10;
+	width: auto;
+	height: 1.3rem;
+	font-family: "iconfont" !important;
+	font-size: 0.9rem;
+	color: #AAA;
+	
+}
+
+/* 标题 - 1级*/
+.title-1 {
+	z-index: 10;
+	width: auto;
+	height: 1.7rem;
+	font-family: "iconfont" !important;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #666;
+	
+}
+
+/* 标题 - 2级*/
+.title-2 {
+	z-index: 10;
+	width: auto;
+	height: 1.6rem;
+	font-family: "iconfont" !important;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #666;
+	
+}
+
+/* 标题 - 3级*/
+.title-3 {
+	z-index: 10;
+	width: auto;
+	height: 1.5rem;
+	font-family: "iconfont" !important;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #666;
+}
+
+
+/**************************************************\
+	组件            
+\**************************************************/
+button {
+	padding-left: 0.5rem;
+	adding-right: 0.5rem;
+	width: auto;
+	height: 2rem;
+ 	font-family: "iconfont" !important;	
+ 	font-size: 1rem;
+ 	background-color: transparent;
+ 	color: #999;
+ 	border: none;
+}
+
+input {
+	z-index: 10;
+	padding: 0.3rem;
+	width: 10rem;
+	height: 1.7rem;
+	font-size: 1.1rem;
+	background-color: #FFF;
+	color: #888;
+	border: none;
+}
+
+input[type=number] {  
+    -moz-appearance:textfield;  
+} 
+
+input[type=number]::-webkit-inner-spin-button,  input[type=number]::-webkit-outer-spin-button {  
+    -webkit-appearance: none;  
+    margin: 0;  
+} 
+
+.image {
+	z-index: 10;
+	width: 1.4rem;
+	height: 1.4rem;
+	background-color: #AAA;
+}
+
+.lookup {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+
+	width: 12rem;
+	height: 1.7rem;
+	background-color: #FFF;
+}
+
+.lookup-input {
+	z-index: 10;
+	padding: 0.3rem;
+	width: 10rem;
+	height: 1.7rem;
+	font-size: 1.1rem;
+	background-color: #FFF;
+	color: #888;
+	border: none;
+	flex-grow: 1;
+}
+
+.lookup-btn {
+	z-index: 10;
+	width: 2rem;
+	height: 1.7rem;
+ 	font-family: "iconfont" !important;	
+ 	font-size: 1rem;
+ 	background-color: transparent;
+ 	color: #999;
+ 	border: none;
+	cursor: pointer;
+}
+
+.lookup-btn:hover {
+	z-index: 10;
+	width: 2rem;
+	height: 1.7rem;
+ 	font-family: "iconfont" !important;	
+ 	font-size: 1rem;
+ 	background-color: transparent;
+ 	color: #1C3B7B;
+ 	border: none;
+	cursor: pointer;
+}
+
+.text {
+	z-index: 10;
+	padding: 0.3rem;
+	width: 10rem;
+	height: 1.7rem;
+	font-size: 1.1rem;
+	background-color: #FFF;
+	color: #888;
+	border: none;
+}
+
+.textarea {
+	z-index: 10;
+	padding: 0.3rem;
+	width: 10rem;
+	height: 5.1rem;
+	font-size: 1.1rem;
+	background-color: #FFF;
+	color: #888;
+	border: none;
+}
+
+.list {
+	z-index: 10;
+	overflow: hidden;
+}
+
+.list-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.list-row-selected {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	background-color: #E9F6FA;
+	overflow: hidden;
+}
+
+.emui-tab-container-h {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.emui-tab-container-v {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+}
+
+.emui-tab-head-h {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+	
+	height: 3rem;
+	width: 100%;
+	background-color: #CCC;
+}
+
+.emui-tab-head-v {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+	
+	height: 100%;
+	width: 6rem;
+	background-color: #EEE;
+}
+
+.emui-tab-content {
+	width: 100%;
+	height:100%;
+	flex-grow: 1;
+	overflow: hidden;
+	
+	background-color: #FFF;
+}
+
+.emui-tab-h {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+	overflow: hidden;
+	
+	font-size: 1rem;
+	font-weight: bold;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	height: 3rem;
+	width:auto;
+}
+
+.emui-tab-selected-h {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+	overflow: hidden;
+	white-space: nowrap;
+	
+	font-size: 1rem;
+	font-weight: bold;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	height: 3rem;
+	width:auto;
+	background-color: #EEE
+	;
+}
+
+.emui-tab-v {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+	
+	font-weight: bold;
+	height: 5rem;
+	width: 100%;
+}
+
+.emui-tab-selected-v {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+	background-repeat: no-repeat; 
+	background-size : 100% 100%;
+	overflow: hidden;
+	
+	font-weight: bold;
+	height: 5rem;
+	width: 100%;
+	background-color: #FFF;
+}
+

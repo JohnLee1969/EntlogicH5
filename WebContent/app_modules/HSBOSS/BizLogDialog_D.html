@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/HSBOSS/BizLogDialog.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='divScreen' class='group-v' style='width: 400px;height: 600px;padding: 12px;'>
+		<div id='tag_1' class='group-v' style='height: 36px;flex-grow: 1;'>
+			<div id='tag_2' class='group-h' style='height: 36px;'>
+				<span id='tag_3' class='lable'>
+					业务操作
+				</span>
+				<select id='selLogType' class='select' style='margin: 0px 0px 0px 4px;flex-grow: 1;'>
+					<option id='tag_7' value='#[CODE]#'>
+						#[CODE_NAME]#
+					</option>
+				</select>
+			</div>
+			<div id='tag_5' class='group-h' style='height: 36px;'>
+				<span id='tag_6' class='lable'>
+					执行单位
+				</span>
+				<input id='txtUserGroupName' type='text' class='text' style='margin: 0px 0px 0px 4px;flex-grow: 1;'>
+				</input>
+			</div>
+			<div id='tag_8' class='group-h' style='height: 36px;'>
+				<span id='tag_12' class='lable'>
+					执行人员
+				</span>
+				<input id='txtUserName' type='text' class='text' style='margin: 0px 0px 0px 4px;flex-grow: 1;'>
+				</input>
+			</div>
+			<div id='tag_14' class='group-h' style='height: 36px;'>
+				<span id='tag_15' class='lable'>
+					备注信息
+				</span>
+			</div>
+			<textarea id='txtLogMessage' class='textarea' style='flex-grow: 1;'>
+			</textarea>
+		</div>
+		<div id='tag_9' class='group-h' style='height: 12px;'>
+		</div>
+		<div id='tag_10' class='group-h' style='height: 28px;'>
+			<div id='tag_11' class='space'>
+			</div>
+			<button id='btnSave' class='button eui-btn' style='width: 60px;'>
+				保存
+			</button>
+		</div>
+	</div>
+</body>
+</html>

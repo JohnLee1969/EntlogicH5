@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic_mob.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_resources/HSBOSS_E.mob/css/common.css' rel='stylesheet' type='text/css'></link>
+	<link href='WorkerForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_device.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_mui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_util_ai.js'></script>
+	<script src='../../entlogic/js/entlogic_util_calendar.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='WorkerForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_1' class='group-h-m hsboss-title-bar'>
+			<span id='tag_4' class='title-1 hsboss-color-white' style='margin: 0.3rem;'>
+				企业阿姨
+			</span>
+			<span id='btnAdd' class='button hsboss-title-bar-right-btn' style='font-size: 2.5rem;'>
+				
+			</span>
+		</div>
+		<div id='lstWorker' class='listview' style='position: absolute;top: 4rem;bottom: 5rem;left: 0rem;right: 0rem;padding: 1rem;overflow-y: auto;display:none;'>
+			<div id='tag_42' class='group-h' style='margin: 0rem 0rem 1rem 0rem;height: 8rem;flex-grow: 1;padding: 0rem 1rem;background-color: #FFF;border-radius: 0.3rem;'>
+				<div id='tag_3' class='group-v-m' style='width: 4rem;'>
+					<image id='tag_43' class='image' style='width: 4rem;height: 4rem;border-radius: 50%;' src='../..#[HEAD_PIC]#'>
+					</image>
+					<span id='tag_7' class='note' style='margin: 0.2rem 0rem 0rem 0rem;'>
+						#[STATUS_TEXT]#
+					</span>
+				</div>
+				<div id='tag_44' class='group-v' style='margin: 0rem 1rem 0rem 1rem;flex-grow: 1;'>
+					<div id='tag_49' class='group-h' style='width: 100%;height: 2.5rem;'>
+						<span id='tag_50' class='title-2' style='padding: 0rem 1rem 0rem 0rem;'>
+							#[NAME]#
+						</span>
+						<div id='tag_8' class='group-h'>
+							<span id='tag_86' class='hsboss-color-blue hsboss-border-blue' style='margin: 0rem 0rem 0rem 0.5rem;height: 1.5rem;padding: 0rem 0.5rem 0rem 0.5rem;border-radius: 1.5rem;font-size: 1rem;'>
+								5级金牌月嫂
+							</span>
+						</div>
+					</div>
+					<span id='tag_48' class='lable note' style='padding: 0.3rem 0rem 0.3rem 0rem;'>
+						#[NATIVE_AREA_TEXT]#  #[AGE]#岁  #[SEX_TEXT]#
+					</span>
+				</div>
+				<button id='btnEdit' class='btnEdit' style='margin: 0rem 1rem 0rem 0rem;'>
+					
+				</button>
+				<button id='tag_11' class='btnTel'>
+					
+				</button>
+			</div>
+		</div>
+		<div id='tag_5' class='group-h' style='position: absolute;height: 4rem;bottom: 0rem;left: 0rem;right: 0rem;background-color: #FFF;'>
+			<div id='tagMain' class='group-v-m' style='height: 4rem;flex-grow: 1;'>
+				<span id='tag_10' class='button' style='font-size: 2rem;color: #000;font-weight: ormal;'>
+					
+				</span>
+				<span id='tag_12' class='lable' style='font-size: 0.8rem;color: #000;'>
+					工作台
+				</span>
+			</div>
+			<div id='tagWorker' class='group-v-m' style='height: 4rem;flex-grow: 1;color: #B1B1B1;'>
+				<span id='tag_14' class='button   hsboss-color-blue' style='font-size: 2rem;'>
+					
+				</span>
+				<span id='tag_15' class='lable   hsboss-color-blue' style='font-size: 0.8rem;'>
+					阿姨
+				</span>
+			</div>
+			<div id='tagOrder' class='group-v-m' style='height: 4rem;flex-grow: 1;'>
+				<span id='tag_20' class='button' style='font-size: 2rem;color: #000;font-weight: bold;'>
+					
+				</span>
+				<span id='tag_21' class='lable' style='font-size: 0.8rem;color: #000;'>
+					订单
+				</span>
+			</div>
+			<div id='tagCustomer' class='group-v-m' style='height: 4rem;flex-grow: 1;'>
+				<span id='tag_23' class='button' style='font-size: 2rem;color: #000;'>
+					
+				</span>
+				<span id='tag_24' class='lable' style='font-size: 0.8rem;color: #000;'>
+					客户
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

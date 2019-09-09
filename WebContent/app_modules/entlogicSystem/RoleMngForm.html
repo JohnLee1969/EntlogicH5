@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='RoleMngForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='RoleMngForm.js'></script>
+</head>
+<body onload='bodyOnload();' id='body'>
+	<div id='tag_0' class='group-v eui-form'>
+		<div id='tag_4' class='group-h eui-form-content'>
+			<div id='tag_5' class='group-v eui-panel' style='width: 100px;height: 100%;flex-grow: 1;'>
+				<div id='tag_6' class='group-h eui-panel-title-bar'>
+					<span id='tag_7' class='label eui-panel-title'>
+						角色列表
+					</span>
+					<div id='tag_8' class='space'>
+					</div>
+					<button id='btnAdd' class='button eui-link-btn'>
+						✚ 添加
+					</button>
+					<button id='btnDelete' class='button eui-link-btn'>
+						━ 删除
+					</button>
+				</div>
+				<div id='tag_9' class='group-v eui-panel-content'>
+					<div id='dgrRole' class='datagrid ' style='width: 100%;flex-grow: 1;'>
+						<div id='tag_10' class='datagrid-head'>
+							<div id='tag_11' class='datagrid-head-content'>
+								<div id='tag_12' class='datagrid-col'>
+									序号
+								</div>
+								<div id='tag_14' class='datagrid-col' style='width: 200px;'>
+									角色名称
+								</div>
+								<div id='tag_15' class='datagrid-col' style='width: 500px;'>
+									角色说明
+								</div>
+							</div>
+						</div>
+						<div id='tag_16' class='datagrid-body'>
+							<div id='tag_17' class='datagrid-body-content'>
+								<div id='tag_18' class='datagrid-row'>
+									<div id='tag_19' class='datagrid-cell'>
+										#[SN]#
+									</div>
+									<div id='tag_21' class='datagrid-cell' style='width: 200px;'>
+										#[ROLE_NAME]#
+									</div>
+									<div id='tag_22' class='datagrid-cell' style='width: 500px;'>
+										#[DESCRIPTION]#
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='tag_23' class='group-v' style='width: 12px;height: 100%;'>
+			</div>
+			<div id='tag_24' class='group-v eui-panel' style='width: 360px;height: 100%;'>
+				<div id='tag_25' class='group-h eui-panel-title-bar'>
+					<span id='tag_26' class='label eui-panel-title'>
+						角色配置
+					</span>
+				</div>
+				<div id='divRole' class='group-v eui-panel-content' style='flex-grow: 1;padding: 12px;'>
+					<div id='tag_28' class='group-h' style='height: 36px;'>
+						<span id='tag_29' class='lable'>
+							角色序号
+						</span>
+						<input id='txtSn' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_32' class='group-h' style='height: 36px;'>
+						<span id='tag_33' class='lable'>
+							角色名称
+						</span>
+						<input id='txtRoleName' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_34' class='group-h' style='height: 36px;'>
+						<span id='tag_35' class='lable'>
+							功能说明
+						</span>
+						<input id='txtDescription' type='text' class='text' style='flex-grow: 1;'>
+						</input>
+					</div>
+					<div id='tag_2' class='group-h' style='height: 36px;'>
+						<span id='tag_36' class='lable'>
+							角色授权
+						</span>
+					</div>
+					<div id='tag_1' class='group' style='flex-grow: 1;background-color: #F5F5F5;overflow-y: auto;'>
+						<div id='tvwRoleAuth' class='treeview '>
+							#[MENU_NAME]#
+						</div>
+					</div>
+					<div id='tag_3' class='group-h' style='width: 100px;height: 12px;'>
+					</div>
+					<div id='tag_37' class='group-h' style='height: 28px;'>
+						<div id='tag_38' class='space'>
+						</div>
+						<button id='btnSave' class='button eui-btn' style='margin: 0px;width: 60px;'>
+							保存
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

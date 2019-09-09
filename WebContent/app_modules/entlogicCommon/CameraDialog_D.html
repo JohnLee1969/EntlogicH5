@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/entlogicCommon/CameraDialog.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/bootstrap.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='divScreen' class='group' style='position: absolute;width: 680px;height: 600px;top: 0px;left: 0px;'>
+		<div id='tag_1' class='group-h' style='position: absolute;height: 30px;bottom: 12px;left: 12px;right: 12px;'>
+			<span id='tag_17' class='lable'>
+				剪切宽度
+			</span>
+			<input id='numWidth' type='number' class='number' style='width: 60px;'>
+			</input>
+			<span id='tag_25' class='lable' style='margin: 0px 0px 0px 6px;'>
+				剪切高度
+			</span>
+			<input id='numHeight' type='number' class='number' style='width: 60px;'>
+			</input>
+			<div id='tag_14' class='space'>
+			</div>
+			<button id='btnPlay' class='button eui-btn' style='margin: 0px 2px 0px 0px;width: 60px;right: 0px;'>
+				取景
+			</button>
+			<button id='btnCapture' class='button eui-btn' style='margin: 0px 2px 0px 0px;width: 60px;right: 0px;'>
+				拍照
+			</button>
+			<button id='tag_12' class='button eui-btn' style='margin: 0px;width: 60px;right: 0px;'>
+				确定
+			</button>
+		</div>
+		<div id='tag_3' class='group-v' style='position: absolute;top: 12px;bottom: 48px;left: 12px;right: 12px;background-color: #BBB;'>
+			<video id='videoPic' style='position: absolute;background-color: #FFF;border-style: groove;'>
+			</video>
+			<canvas id='canvasPic' style='position: absolute;width: 270px;height: 360px;border-style: solid;border-width: 1px;border-color: #FFF;'>
+			</canvas>
+		</div>
+	</div>
+</body>
+</html>

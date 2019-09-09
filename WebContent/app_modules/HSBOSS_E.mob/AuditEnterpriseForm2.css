@@ -1,0 +1,50 @@
+.service-rate {
+    max-width: 7rem;
+    height: 1.5rem;
+    color: #A00;
+    font-size: 0.9rem;
+}
+
+.comm-rate {
+    min-width: 4rem;
+    height: 1.5rem;
+    color: #A00;
+    font-size: 0.9rem;
+}
+
+.btn-decrease {
+    z-index: 10;
+    color: #555;
+    fontsize: 0.9rem;
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: #555;
+    border-radius: 50%;
+}
+
+.btn-increase {
+    z-index: 10;
+    color: #FFF;
+    background-color: #0074FF;
+    fontsize: 0.9rem;
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: #0074FF;
+    border-radius: 50%;
+}	
+
+.btn-add {
+    z-index: 10;
+    color: #0074FF;
+    font-size: 2rem;
+}
+
+.btn-delete {
+    z-index: 10;
+    margin-right: 0.5rem;
+    color: #555;
+    font-size: 1.5rem;
+}	
+
+
+    

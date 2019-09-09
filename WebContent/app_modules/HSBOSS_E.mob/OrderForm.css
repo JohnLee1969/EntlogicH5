@@ -1,0 +1,11 @@
+
+.list-item-normal {
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.list-item-selected {
+    color: #2a7cf7;
+	overflow: hidden;
+    background-color: #FFF;
+}

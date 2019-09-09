@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'></meta>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'></meta>
+	<link href='../../common/css/bootstrap.min.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/font.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/builder.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../entlogic/css/entlogic.css' rel='stylesheet' type='text/css'></link>
+	<link href='../../app_modules/entlogicTemplates/EntlogicDocForm.css' rel='stylesheet' type='text/css'></link>
+	<script src='../../common/js/jquery-1.11.1.min.js'></script>
+	<script src='../../common/js/base64.js'></script>
+	<script src='../../entlogic/js/entlogic.js'></script>
+	<script src='../../entlogic/js/entlogic_data.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_input.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_output.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_select.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_list.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_datagrid.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_treeview.js'></script>
+	<script src='../../entlogic/js/entlogic_ui_lookup.js'></script>
+	<script src='../../entlogic/js/entlogic_builder.js'></script>
+</head>
+<body onload='desingPageOnLoad();' id='body'>
+	<div id='tag_0' class='group' style='position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;'>
+		<div id='tag_2' class='group' style='position: absolute;height: 32px;top: 0px;left: 0px;right: 0px;'>
+			<div id='tag_4' class='group-h eui-panel-title-bar'>
+				<span id='lblDocTitle' class='label eui-panel-title'>
+					档案标题
+				</span>
+				<div id='tag_8' class='space'>
+				</div>
+				<button id='btnFixWidth' class='button eui-link-btn'>
+					⇆ 页宽
+				</button>
+				<button id='btnFixHeight' class='button eui-link-btn'>
+					⇅ 页高
+				</button>
+				<button id='btnZoomDown' class='button eui-link-btn'>
+					- 缩小
+				</button>
+				<button id='btnZoomUp' class='button eui-link-btn'>
+					+ 放大
+				</button>
+				<button id='btnRestore' class='button eui-link-btn'>
+					↻ 还原
+				</button>
+				<button id='btnSave' class='button eui-link-btn'>
+					保存
+				</button>
+			</div>
+		</div>
+		<div id='divPageView' class='group' style='position: absolute;top: 32px;bottom: 0px;left: 0px;right: 0px;padding: 6px;background-color: #AAA;overflow-x: auto;overflow-y: auto;'>
+			<div id='divPage' class='group eui-doc-page' style='width: 630px;height: 891px;'>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
